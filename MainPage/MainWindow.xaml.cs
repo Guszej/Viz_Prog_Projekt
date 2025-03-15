@@ -34,7 +34,8 @@ namespace MainPage
 
         private void btReg(object sender, RoutedEventArgs e)
         {
-
+            Register registerpg = new Register();
+            registerpg.Show();
         }
     }
 }

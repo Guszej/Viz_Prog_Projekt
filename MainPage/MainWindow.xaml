@@ -8,10 +8,10 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Login" HorizontalAlignment="Center" Height="50" Margin="0,60,0,0" VerticalAlignment="Top" 
-        Width="150" Click="btLogin"/>
-        <Button Content="Guest" HorizontalAlignment="Center" Margin="0,130,0,0" VerticalAlignment="Top" 
-        Height="50" Width="150" Click="btGuest"/>
+     Width="150" Click="btLogin"/>
+        <Button Content="Guest" HorizontalAlignment="Center" Margin="0,138,0,0" VerticalAlignment="Top" 
+     Height="50" Width="150" Click="btGuest"/>
         <Button Content="Register" HorizontalAlignment="Center" Height="50" Margin="0,217,0,0" VerticalAlignment="Top" 
-        Width="150" Click="btReg"/>
+     Width="150" Click="btReg"/>
     </Grid>
 </Window>
