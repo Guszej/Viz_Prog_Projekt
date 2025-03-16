@@ -23,5 +23,20 @@ namespace MainPage
         {
             InitializeComponent();
         }
+
+        private void lgUser_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void lgPWD_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

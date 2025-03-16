@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MainPage"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="Login" Height="420" Width="380">
     <Grid>
-        
+        <Label Content="Belépés" HorizontalAlignment="Center" Height="50" Margin="0,10,0,0" VerticalAlignment="Top" Width="100" FontSize="25"/>
+        <Label Content="Felhasználónév:" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Margin="10,91,0,0"/>
+        <TextBox x:Name="lgUser" HorizontalAlignment="Center" Margin="0,125,0,0" VerticalAlignment="Top" Width="330" Height="25" TextWrapping="Wrap" TextChanged="lgUser_TextChanged"/>
+        <Label Content="Jelszó:" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="lgPWD" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" Height="25" Margin="0,186,0,0" TextChanged="lgPWD_TextChanged"/>
+        <Button Content="Belépés" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
     </Grid>
 </Window>
