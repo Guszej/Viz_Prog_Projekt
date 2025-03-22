@@ -93,7 +93,7 @@ namespace MainPage {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MainPage;component/register.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MainPage;V1.0.0.0;component/register.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Register.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

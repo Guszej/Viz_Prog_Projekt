@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt2\\MainPage\\MainPage.csproj",
+      "projectUniqueName": "C:\\Users\\Vmark\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
       "projectName": "MainPage",
-      "projectPath": "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt2\\MainPage\\MainPage.csproj",
+      "projectPath": "C:\\Users\\Vmark\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
       "packagesPath": "C:\\Users\\Vmark\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt2\\MainPage\\obj\\",
+      "outputPath": "C:\\Users\\Vmark\\Viz_Prog_Projekt\\MainPage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -19,23 +19,7 @@ namespace MainPage
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void btLogin(object sender, RoutedEventArgs e)
-        {
-            Login loginpg = new Login();
-            loginpg.Show();
-        }
-
-        private void btGuest(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btReg(object sender, RoutedEventArgs e)
-        {
-            Register registerpg = new Register();
-            registerpg.Show();
+            MainFrame.Navigate(new Uri("MainMenu.xaml", UriKind.Relative));
         }
     }
 }

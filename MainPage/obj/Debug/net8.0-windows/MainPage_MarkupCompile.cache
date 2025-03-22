@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt2\MainPage\obj\Debug\net8.0-windows\
+C:\Users\Vmark\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\
 MainPage
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt2\MainPage\App.xaml
-3629739055
+C:\Users\Vmark\Viz_Prog_Projekt\MainPage\App.xaml
+483354289
 
-6-1681755310
+7503302724
 198-556154604
-Login.xaml;MainWindow.xaml;Register.xaml;
+LoginPage.xaml;MainMenu.xaml;MainWindow.xaml;RegisterPage.xaml;
 
 False
 
