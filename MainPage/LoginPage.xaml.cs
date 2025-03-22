@@ -60,5 +60,10 @@ namespace MainPage
         {
             NavigationService.GoBack();
         }
+
+        private void bttnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

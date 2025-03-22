@@ -24,7 +24,6 @@ namespace MainPage
         {
             InitializeComponent();
         }
-
         private void btLogin(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("LoginPage.xaml", UriKind.Relative));
@@ -39,5 +38,11 @@ namespace MainPage
         {
             NavigationService.Navigate(new Uri("RegisterPage.xaml", UriKind.Relative));
         }
+
+        private void bttnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
     }
 }

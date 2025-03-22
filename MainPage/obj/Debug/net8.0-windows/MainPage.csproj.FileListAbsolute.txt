@@ -25,15 +25,11 @@ C:\Users\User\Viz_Prog_Projekt\MainPage\bin\Debug\net8.0-windows\MainPage.deps.j
 C:\Users\User\Viz_Prog_Projekt\MainPage\bin\Debug\net8.0-windows\MainPage.runtimeconfig.json
 C:\Users\User\Viz_Prog_Projekt\MainPage\bin\Debug\net8.0-windows\MainPage.dll
 C:\Users\User\Viz_Prog_Projekt\MainPage\bin\Debug\net8.0-windows\MainPage.pdb
-C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\Login.g.cs
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\Register.g.cs
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage_MarkupCompile.cache
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage_MarkupCompile.lref
-C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\Login.baml
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainWindow.baml
-C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\Register.baml
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage.g.resources
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage.AssemblyInfoInputs.cache
@@ -101,3 +97,11 @@ C:\Users\Vmark\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\refint\MainPag
 C:\Users\Vmark\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage.pdb
 C:\Users\Vmark\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage.genruntimeconfig.cache
 C:\Users\Vmark\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\ref\MainPage.dll
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\LoginPage.baml
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainMenu.baml
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\LoginPage.g.cs
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainMenu.g.cs
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\RegisterPage.g.cs
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\RegisterPage.baml
+C:\Users\User\Viz_Prog_Projekt\MainPage\bin\Debug\net8.0-windows\Images\kep.png
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage_Content.g.cs

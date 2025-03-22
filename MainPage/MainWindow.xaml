@@ -4,6 +4,7 @@
         Title="MainWindow" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <!-- Main Frame for Navigation -->
+        <Image x:Name="bImage" Source="/Images/kep.png" Stretch="UniformToFill"/>
         <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"
                HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>

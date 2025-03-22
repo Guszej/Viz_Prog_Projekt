@@ -4,11 +4,32 @@
       Title="MainMenu">
 
     <Grid>
-        <Button Content="Login" HorizontalAlignment="Center" Height="50" Margin="0,60,0,0"
+
+        <Button Content="Login" HorizontalAlignment="Center" Height="50" Margin="0,84,0,133"
                 Width="150" Click="btLogin"/>
-        <Button Content="Guest" HorizontalAlignment="Center" Margin="0,138,0,0"
+        <Button Content="Guest" HorizontalAlignment="Center" Margin="0,152,0,65"
                 Height="50" Width="150" Click="btGuest"/>
         <Button Content="Register" HorizontalAlignment="Center" Height="50" Margin="0,217,0,0"
                 Width="150" Click="btReg"/>
+        <Button x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Red"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
 </Page>

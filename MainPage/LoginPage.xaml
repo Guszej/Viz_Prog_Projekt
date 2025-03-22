@@ -4,33 +4,41 @@
       Title="LoginPage">
 
     <Grid>
-        <!-- Title Label -->
         <Label Content="Belépés" HorizontalAlignment="Center" Height="50" Margin="0,10,0,0" 
-               VerticalAlignment="Top" Width="100" FontSize="25"/>
-
-        <!-- Username Label -->
-        <Label Content="Felhasználónév:" HorizontalAlignment="Left" VerticalAlignment="Top" 
-               FontSize="14" Margin="10,91,0,0"/>
-
-        <!-- Username TextBox -->
+              VerticalAlignment="Top" Width="100" FontSize="25" Foreground="White"/>
+        <Label Content="Felhasználónév / E-mail cím:" HorizontalAlignment="Center" VerticalAlignment="Top" 
+               FontSize="14" Margin="0,95,154,0" Foreground="White"/>
         <TextBox x:Name="lgUser" HorizontalAlignment="Center" Margin="0,125,0,0" 
                  VerticalAlignment="Top" Width="330" Height="25" TextWrapping="Wrap"
                  TextChanged="lgUser_TextChanged"/>
-
-        <!-- Password Label -->
-        <Label Content="Jelszó:" HorizontalAlignment="Left" Margin="10,155,0,0" 
-               VerticalAlignment="Top" FontSize="14"/>
-
-        <!-- Password TextBox (Should be a PasswordBox for security) -->
+        <Label Content="Jelszó:" HorizontalAlignment="Center" Margin="0,155,287,0" 
+               VerticalAlignment="Top" FontSize="14" Foreground="White"/>
         <PasswordBox x:Name="lgPWD" HorizontalAlignment="Center" VerticalAlignment="Top"
-                     Width="330" Height="25" Margin="0,186,0,0" PasswordChanged="lgPWD_TextChanged"/>
-
-        <!-- Login Button -->
+                     Width="330" Height="25" Margin="0,185,0,0" PasswordChanged="lgPWD_TextChanged"/>
         <Button Content="Belépés" HorizontalAlignment="Center" Margin="0,250,0,0" 
                 VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
-
-        <!-- Back Button -->
         <Button Content="Vissza" HorizontalAlignment="Left" Margin="10,10,0,0" 
                 VerticalAlignment="Top" Height="30" Width="75" Click="GoBack"/>
+
+        <Button x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Red"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
 </Page>
