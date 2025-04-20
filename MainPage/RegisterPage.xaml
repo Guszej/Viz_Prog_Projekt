@@ -18,7 +18,7 @@
         <TextBox x:Name="txtPassword" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" Height="24" Margin="0,200,0,0"/>
         <Label Content="Jelszó megerősítése:" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Width="158" FontSize="14" Foreground="White"/>
         <TextBox x:Name="txtPassword2" HorizontalAlignment="Center" Margin="0,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330" Height="25"/>
-        <Button x:Name="bttnReg" Content="Regszitráció" Click="bttnReg_Click" Height="30" Width="100" VerticalAlignment="Bottom" Margin="0,0,0,50"/>
+        <Button x:Name="bttnReg" Content="Regisztráció" Click="bttnReg_Click" Height="30" Width="100" VerticalAlignment="Bottom" Margin="0,0,0,50"/>
         <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
         <Button x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
             <Button.Style>

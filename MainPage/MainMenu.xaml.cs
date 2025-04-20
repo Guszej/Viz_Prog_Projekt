@@ -31,7 +31,7 @@ namespace MainPage
 
         private void btGuest(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("GuestPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("Main.xaml", UriKind.Relative));
         }
 
         private void btReg(object sender, RoutedEventArgs e)

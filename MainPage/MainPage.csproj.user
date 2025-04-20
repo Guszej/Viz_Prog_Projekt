@@ -10,6 +10,9 @@
     <Compile Update="LoginPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MainMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

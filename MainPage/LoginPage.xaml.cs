@@ -45,7 +45,8 @@ namespace MainPage
 
             if (username == "admin" && password == "1234") // Example credentials
             {
-                MessageBox.Show("Sikeres bejelentkezés!", "Login", MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Sikeres bejelentkezés!", "Login", MessageBoxButton.OK, MessageBoxImage.Information);
+                NavigationService.Navigate(new Uri("Main.xaml", UriKind.Relative));
                 // Navigate to another page if needed
                 // NavigationService.Navigate(new Uri("Dashboard.xaml", UriKind.Relative));
             }

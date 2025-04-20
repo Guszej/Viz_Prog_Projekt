@@ -105,3 +105,5 @@ C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\RegisterPage.g.
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\RegisterPage.baml
 C:\Users\User\Viz_Prog_Projekt\MainPage\bin\Debug\net8.0-windows\Images\kep.png
 C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage_Content.g.cs
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\Main.g.cs
+C:\Users\User\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\Main.baml
