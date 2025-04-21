@@ -51,7 +51,11 @@ namespace MainPage
         private void GameInfoTable_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             //átirányítás a játék felületére
-            //NavigationService.Navigate(new Uri("kövi oldal neve", UriKind.Relative));
+            NavigationService.Navigate(new Uri("GamePage.xaml", UriKind.Relative));
+        }
+        private void GoBack(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }

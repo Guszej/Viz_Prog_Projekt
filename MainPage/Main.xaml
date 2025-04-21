@@ -9,6 +9,7 @@
       Title="Main">
     <Grid>
         <Label Content="Játékaink" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
+        <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
         <DataGrid Height="900" Width="1600" x:Name="GameInfoTable" ItemsSource="{Binding}" MouseDoubleClick="GameInfoTable_MouseDoubleClick"
                   ColumnWidth="200" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserAddRows="False" AlternatingRowBackground="DarkGray"
                   Background="Transparent" BorderThickness="0">
