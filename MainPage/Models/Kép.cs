@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace MainPage.Models;
+
+public partial class Kép
+{
+    public int GameId { get; set; }
+
+    public int KépId { get; set; }
+
+    public virtual Game Game { get; set; } = null!;
+}

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MainPage.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MainPage
 {
@@ -20,11 +22,20 @@ namespace MainPage
     /// </summary>
     public partial class Main : Page
     {
+        private readonly GameContext _context = new GameContext();
         public Main()
         {
             InitializeComponent();
-            GameInfoTable.ItemsSource = LoadCollectionData();
+            
+            LoadGames();
         }
+
+        private void LoadGames()
+        {
+            var games = _context.Games.ToList();
+            GameDataGrid.ItemsSource = games;
+        }
+
         public class GameInfo
         {
             public int ID { get; set; }
@@ -36,12 +47,7 @@ namespace MainPage
             public string Mode {  get; set; }
             public float Rating {  get; set; }
         }
-        private List<GameInfo> LoadCollectionData()
-        {
-            List<GameInfo> games = new List<GameInfo>();
-            //adatok hozzáadása ha hozzá lesz adva az adatbázis
-            return games;
-        }
+       
 
         private void bttnExit_Click(object sender, RoutedEventArgs e)
         {

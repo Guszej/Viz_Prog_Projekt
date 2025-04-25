@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MainPage.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MainPage
 {
@@ -20,10 +22,13 @@ namespace MainPage
     /// </summary>
     public partial class GamePage : Page
     {
+
+        
         public GamePage()
         {
             InitializeComponent();
         }
+
 
         private void bttnExit_Click(object sender, RoutedEventArgs e)
         {
@@ -33,5 +38,6 @@ namespace MainPage
         {
             NavigationService.GoBack();
         }
+
     }
 }

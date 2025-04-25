@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MainPage.Models;
 
 namespace MainPage
 {
@@ -17,9 +18,12 @@ namespace MainPage
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        
         public MainWindow()
         {
             InitializeComponent();
+            
             MainFrame.Navigate(new Uri("MainMenu.xaml", UriKind.Relative));
         }
         Image CreateBitmap(string uri)
@@ -51,5 +55,7 @@ namespace MainPage
             bImage.Source = GetImages()[0].Source;
             SetBackground();
         }
+
+
     }
 }

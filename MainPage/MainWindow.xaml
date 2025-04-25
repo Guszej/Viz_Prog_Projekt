@@ -1,7 +1,7 @@
 ﻿<Window x:Class="MainPage.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" WindowState="Maximized" WindowStyle="None" Loaded="Window_Loaded">
+        Title="MainWindow" WindowState="Maximized" WindowStyle="None">
     <Grid>
         <!-- Main Frame for Navigation -->
         <Image x:Name="bImage" Stretch="UniformToFill"/>
