@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\
+C:\Users\Vmark\source\repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\
 MainPage
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\App.xaml
+C:\Users\Vmark\source\repos\Viz_Prog_Projekt\MainPage\App.xaml
 61962765602
 21582950225
 16354384520
 2281970438237
 GamePage.xaml;LoginPage.xaml;Main.xaml;MainMenu.xaml;MainWindow.xaml;RegisterPage.xaml;
 
-False
+True
 
