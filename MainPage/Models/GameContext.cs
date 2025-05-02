@@ -85,9 +85,16 @@ public partial class GameContext : DbContext
             entity.Property(e => e.KépId)
                 .ValueGeneratedNever()
                 .HasColumnName("KépID");
-            entity.Property(e => e.GameId).HasColumnName("GameID");
 
-            entity.HasOne(d => d.Game).WithMany(p => p.Képs)
+            entity.Property(e => e.GameId)
+                .HasColumnName("GameID");
+
+            entity.Property(e => e.Utvonal)
+                .HasMaxLength(255)
+                .HasColumnName("Utvonal");
+
+            entity.HasOne(d => d.Game)
+                .WithMany(p => p.Képs)
                 .HasForeignKey(d => d.GameId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Kép_Game");
