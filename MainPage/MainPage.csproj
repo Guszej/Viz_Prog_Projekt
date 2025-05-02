@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Images\backgrndimg.png" />
     <None Remove="Images\kep.png" />
+    <None Remove="jatekkep\RC.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,7 @@
     <Content Include="Images\kep.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="jatekkep\RC.jpg" />
   </ItemGroup>
 
   <ItemGroup>

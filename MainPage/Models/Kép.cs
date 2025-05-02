@@ -9,5 +9,7 @@ public partial class Kép
 
     public int KépId { get; set; }
 
+    public string Utvonal { get; set; }
+
     public virtual Game Game { get; set; } = null!;
 }

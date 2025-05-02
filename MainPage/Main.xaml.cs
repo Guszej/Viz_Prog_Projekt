@@ -32,8 +32,23 @@ namespace MainPage
 
         private void LoadGames()
         {
-            var games = _context.Games.ToList();
-            GameDataGrid.ItemsSource = games;
+            var gamesWithImages = (from g in _context.Games
+                                   join k in _context.Képs on g.Id equals k.GameId
+                                   select new
+                                   {
+                                       g.Id,
+                                       g.Név,
+                                       g.Megjelenés,
+                                       g.Készítő,
+                                       g.Típus,
+                                       g.Platform,
+                                       g.Mód,
+                                       g.GÉrtékelés,
+                                       g.Értékelés,
+                                       KepUtvonal = k.Utvonal
+                                   }).ToList();
+
+            GameDataGrid.ItemsSource = gamesWithImages;
         }
 
         public class GameInfo

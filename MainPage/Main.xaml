@@ -10,9 +10,31 @@
     <Grid>
         <Label Content="Játékaink" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
         <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
-        <DataGrid Height="900" Width="1600" x:Name="GameInfoTable" ItemsSource="{Binding}" MouseDoubleClick="GameInfoTable_MouseDoubleClick"
-                  ColumnWidth="200" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserAddRows="False" AlternatingRowBackground="DarkGray"
-                  Background="Transparent" BorderThickness="0">
+        <DataGrid Height="900" Width="1600" x:Name="GameDataGrid" MouseDoubleClick="GameInfoTable_MouseDoubleClick"
+          ColumnWidth="200" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserAddRows="False"
+          AlternatingRowBackground="DarkGray"
+          Background="Transparent" BorderThickness="0" AutoGenerateColumns="False">
+           
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Kép" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding KepUtvonal}" Width="100" Height="100"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+              
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="200"/>
+                <DataGridTextColumn Header="Név" Binding="{Binding Név}" Width="200"/>
+                <DataGridTextColumn Header="Megjelenés" Binding="{Binding Megjelenés}" Width="100"/>
+                <DataGridTextColumn Header="Készítő" Binding="{Binding Készítő}" Width="150"/>
+                <DataGridTextColumn Header="Típus" Binding="{Binding Típus}" Width="100"/>
+                <DataGridTextColumn Header="Platform" Binding="{Binding Platform}" Width="100"/>
+                <DataGridTextColumn Header="Mód" Binding="{Binding Mód}" Width="80"/>
+                <DataGridTextColumn Header="G_Értékelés" Binding="{Binding GÉrtékelés}" Width="80"/>
+                <DataGridTextColumn Header="Értékelés" Binding="{Binding Értékelés}" Width="80"/>
+            </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
             <Button.Style>
@@ -34,11 +56,6 @@
                 </Style>
             </Button.Style>
         </Button>
-        <DataGrid x:Name="GameDataGrid" 
-           AutoGenerateColumns="True" 
-           Margin="20,100,20,20" 
-           Background="White"
-           Foreground="Black"
-           />
+
     </Grid>
 </Page>
