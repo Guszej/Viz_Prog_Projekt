@@ -37,10 +37,14 @@ namespace MainPage
                                        g.Platform,
                                        g.Mód,
                                        g.GÉrtékelés,
+<<<<<<< HEAD
                                        Értékelés = _context.Értékelés
                                            .Where(e => e.GameId == g.Id && e.FelhasználóId == bejelentkezettFelhasznalo.Id)
                                            .Select(e => e.FelhasználóÉrtékelés)
                                            .FirstOrDefault(),
+=======
+                                       g.Értékelés,
+>>>>>>> 15fd30ae9b9798f14bacb657794a82e54ca4280f
                                        KepUtvonal = k.Utvonal
                                    }).ToList();
 

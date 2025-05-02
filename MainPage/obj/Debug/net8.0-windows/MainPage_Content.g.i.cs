@@ -10,5 +10,6 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/backgrndimg.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/kep.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("jatekkep/rc.jpg")]
 
 
