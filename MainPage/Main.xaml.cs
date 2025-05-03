@@ -1,33 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using MainPage.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MainPage
 {
-    /// <summary>
-    /// Interaction logic for Main.xaml
-    /// </summary>
     public partial class Main : Page
     {
         private readonly GameContext _context = new GameContext();
-        public Main()
+        private readonly Felhasználó bejelentkezettFelhasznalo;
+
+        public Main(Felhasználó felhasznalo)
         {
             InitializeComponent();
-            
+            bejelentkezettFelhasznalo = felhasznalo;
+
             LoadGames();
+            GameDataGrid.CellEditEnding += GameDataGrid_CellEditEnding;
         }
 
         private void LoadGames()
@@ -44,25 +37,68 @@ namespace MainPage
                                        g.Platform,
                                        g.Mód,
                                        g.GÉrtékelés,
-                                       g.Értékelés,
+                                       Értékelés = _context.Értékelés
+                                           .Where(e => e.GameId == g.Id && e.FelhasználóId == bejelentkezettFelhasznalo.Id)
+                                           .Select(e => e.FelhasználóÉrtékelés)
+                                           .FirstOrDefault(),
                                        KepUtvonal = k.Utvonal
                                    }).ToList();
 
             GameDataGrid.ItemsSource = gamesWithImages;
         }
 
-        public class GameInfo
+        private void GameDataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
         {
-            public int ID { get; set; }
-            public string Name { get; set; }
-            public string Dev { get; set; }
-            public string ReleaseDate {  get; set; }
-            public string Type { get; set; }
-            public string Platform { get; set; }
-            public string Mode {  get; set; }
-            public float Rating {  get; set; }
+            if (e.Column.Header.ToString() == "Értékelés")
+            {
+                var row = (dynamic)e.Row.Item;
+                var textbox = e.EditingElement as TextBox;
+                if (textbox != null && double.TryParse(textbox.Text, out double ujErtekeles))
+                {
+                    var gameId = (int)row.Id;
+
+                    if (ujErtekeles < 0 || ujErtekeles > 10)
+                    {
+                        MessageBox.Show("Adj meg egy számot 0 és 10 között!");
+                        return;
+                    }
+
+                    var letezo = _context.Értékelés.FirstOrDefault(x =>
+                        x.FelhasználóId == bejelentkezettFelhasznalo.Id &&
+                        x.GameId == gameId);
+
+                    if (letezo != null)
+                    {
+                        letezo.FelhasználóÉrtékelés = ujErtekeles;
+                    }
+                    else
+                    {
+                        var uj = new Értékelé
+                        {
+                            FelhasználóId = bejelentkezettFelhasznalo.Id,
+                            GameId = gameId,
+                            FelhasználóÉrtékelés = ujErtekeles
+                        };
+                        _context.Értékelés.Add(uj);
+                    }
+
+                    // GÉrtékelés frissítése
+                    var ertekelesek = _context.Értékelés
+                        .Where(x => x.GameId == gameId)
+                        .ToList();
+
+                    var game = _context.Games.FirstOrDefault(x => x.Id == gameId);
+                    if (game != null && ertekelesek.Count > 0)
+                    {
+                        game.GÉrtékelés = (float)ertekelesek.Average(x => x.FelhasználóÉrtékelés);
+                    }
+
+                    _context.SaveChanges();
+                    MessageBox.Show("Értékelés mentve!");
+                    LoadGames(); // Frissítjük a táblázatot
+                }
+            }
         }
-       
 
         private void bttnExit_Click(object sender, RoutedEventArgs e)
         {
@@ -71,9 +107,9 @@ namespace MainPage
 
         private void GameInfoTable_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            //átirányítás a játék felületére
             NavigationService.Navigate(new Uri("GamePage.xaml", UriKind.Relative));
         }
+
         private void GoBack(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();

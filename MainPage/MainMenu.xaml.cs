@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MainPage.Models;
 
 namespace MainPage
 {
@@ -31,7 +32,15 @@ namespace MainPage
 
         private void btGuest(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("Main.xaml", UriKind.Relative));
+            var guestUser = new Felhasználó
+            {
+                Név = "Vendég",
+                Email = "guest@guest.hu",
+                Rang = "Vendég"
+            };
+
+            var mainPage = new Main(guestUser);
+            this.NavigationService?.Navigate(mainPage);
         }
 
         private void btReg(object sender, RoutedEventArgs e)

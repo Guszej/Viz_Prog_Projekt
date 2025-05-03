@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainPage.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,38 +26,51 @@ namespace MainPage
             InitializeComponent();
         }
 
-        // Handle username text change (optional)
+
         private void lgUser_TextChanged(object sender, TextChangedEventArgs e)
         {
-            // You can add validation here if needed
+
         }
 
-        // Handle password text change (optional)
         private void lgPWD_TextChanged(object sender, RoutedEventArgs e)
         {
-            // You can add validation here if needed
-        }
 
-        // Login button click
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string username = lgUser.Text;
-            string password = lgPWD.Password; // Using PasswordBox for security
+            string user = lgUser.Text.Trim();
+            string jelszo = lgPWD.Password;
 
-            if (username == "admin" && password == "1234") // Example credentials
+            using (var context = new GameContext())
             {
-                //MessageBox.Show("Sikeres bejelentkezés!", "Login", MessageBoxButton.OK, MessageBoxImage.Information);
-                NavigationService.Navigate(new Uri("Main.xaml", UriKind.Relative));
-                // Navigate to another page if needed
-                // NavigationService.Navigate(new Uri("Dashboard.xaml", UriKind.Relative));
-            }
-            else
-            {
-                MessageBox.Show("Hibás felhasználónév vagy jelszó!", "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
+                // 1. Felhasználó lekérdezése felhasználónév vagy e-mail alapján
+                var felhasznalo = context.Felhasználós
+                    .FirstOrDefault(f => (f.Név == user || f.Email == user));
+
+                if (felhasznalo == null)
+                {
+                    MessageBox.Show("Nincs ilyen felhasználó vagy e-mail cím.", "Hiba", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // 2. Jelszó ellenőrzés
+                if (felhasznalo.Jelszó.Trim() != jelszo)
+                {
+                    MessageBox.Show("Hibás jelszó!", "Hiba", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                // 3. Rang lekérdezés
+                string rang = felhasznalo.Rang;
+
+                MessageBox.Show($"Sikeres bejelentkezés! Rang: {rang}", "Bejelentkezés", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                // 4. Átadás a MainPage-re, a felhasználó adataival
+                var main = new Main(felhasznalo);
+                this.NavigationService?.Navigate(main);
             }
         }
 
-        // Back button click
         private void GoBack(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();

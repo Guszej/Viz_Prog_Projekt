@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\models\\k\u00E9p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:models\\k\u00E9p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\models\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +66,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\LoginPage.xaml.cs",
+              "RelativeToolTip": "LoginPage.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T08:58:00.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "K\u00E9p.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Models\\K\u00E9p.cs",
               "RelativeDocumentMoniker": "Models\\K\u00E9p.cs",
@@ -70,12 +87,11 @@
               "RelativeToolTip": "Models\\K\u00E9p.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T13:47:33.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-02T13:47:33.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GameContext.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Models\\GameContext.cs",
               "RelativeDocumentMoniker": "Models\\GameContext.cs",
@@ -83,12 +99,11 @@
               "RelativeToolTip": "Models\\GameContext.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAAwFwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T13:17:41.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T13:17:41.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Felhaszn\u00E1l\u00F3.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Models\\Felhaszn\u00E1l\u00F3.cs",
               "RelativeDocumentMoniker": "Models\\Felhaszn\u00E1l\u00F3.cs",
@@ -96,12 +111,11 @@
               "RelativeToolTip": "Models\\Felhaszn\u00E1l\u00F3.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T13:01:48.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T13:01:48.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RegisterPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
@@ -109,24 +123,22 @@
               "RelativeToolTip": "RegisterPage.xaml.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAIwCMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T13:01:42.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T13:01:42.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "RegisterPage.xaml",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\RegisterPage.xaml",
               "RelativeDocumentMoniker": "RegisterPage.xaml",
               "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\RegisterPage.xaml",
               "RelativeToolTip": "RegisterPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-01T12:59:54.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T12:59:54.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Main.xaml",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Main.xaml",
               "RelativeDocumentMoniker": "Main.xaml",
@@ -138,33 +150,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Main.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Main.xaml.cs",
               "RelativeDocumentMoniker": "Main.xaml.cs",
               "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Main.xaml.cs",
               "RelativeToolTip": "Main.xaml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAA1wDAAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T10:19:27.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "MainMenu.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainMenu.xaml.cs",
               "RelativeDocumentMoniker": "MainMenu.xaml.cs",
               "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainMenu.xaml.cs",
               "RelativeToolTip": "MainMenu.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBwAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T10:19:13.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -172,12 +184,11 @@
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T13:29:23.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T13:29:23.198Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
