@@ -4727,11 +4727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+      "projectUniqueName": "C:\\Users\\Bence\\Desktop\\fixenjóezaszar22222\\MainPage\\MainPage.csproj",
       "projectName": "MainPage",
-      "projectPath": "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+      "projectPath": "C:\\Users\\Bence\\Desktop\\fixenjóezaszar22222\\MainPage\\MainPage.csproj",
       "packagesPath": "C:\\Users\\Bence\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\obj\\",
+      "outputPath": "C:\\Users\\Bence\\Desktop\\fixenjóezaszar22222\\MainPage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
