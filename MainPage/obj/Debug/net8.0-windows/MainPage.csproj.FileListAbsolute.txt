@@ -430,3 +430,5 @@ C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\r
 C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage.pdb
 C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\MainPage.genruntimeconfig.cache
 C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\ref\MainPage.dll
+C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\AddGamePage.baml
+C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\AddGamePage.g.cs

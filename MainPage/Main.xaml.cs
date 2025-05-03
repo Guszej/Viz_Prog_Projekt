@@ -19,6 +19,17 @@ namespace MainPage
             InitializeComponent();
             bejelentkezettFelhasznalo = felhasznalo;
 
+            // Értékelés oszlop elrejtése vendég esetén
+            if (bejelentkezettFelhasznalo.Név == "Vendég")
+            {
+                ErtekelesOszlop.Visibility = Visibility.Collapsed;
+            }
+
+            if (bejelentkezettFelhasznalo.Rang == "Admin")
+            {
+                btnAddGame.Visibility = Visibility.Visible;
+            }
+
             LoadGames();
             GameDataGrid.CellEditEnding += GameDataGrid_CellEditEnding;
         }
@@ -104,7 +115,10 @@ namespace MainPage
         {
             Application.Current.Shutdown();
         }
-
+        private void AddGame_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new AddGamePage(bejelentkezettFelhasznalo));
+        }
         private void GameInfoTable_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new Uri("GamePage.xaml", UriKind.Relative));
