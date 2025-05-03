@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {}
+    "C:\\Users\\Vmark\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {
+    "C:\\Users\\Vmark\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+        "projectUniqueName": "C:\\Users\\Vmark\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
         "projectName": "MainPage",
-        "projectPath": "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+        "projectPath": "C:\\Users\\Vmark\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
         "packagesPath": "C:\\Users\\Vmark\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\obj\\",
         "projectStyle": "PackageReference",
