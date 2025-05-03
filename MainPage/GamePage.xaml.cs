@@ -27,10 +27,11 @@ namespace MainPage
     {
         private GameContext context = new GameContext();
         private int selectedid;
-        public GamePage(int selected)
+        public GamePage(int gameId)
         {
             InitializeComponent();
-            selectedid = selected + 1;
+            selectedid = gameId;
+            SelectedGame(selectedid);
         }
         private void SelectedGame(int szam)
         {

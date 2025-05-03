@@ -596,3 +596,7 @@ C:\Users\User\source\repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\Ma
 C:\Users\User\source\repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\ref\MainPage.dll
 C:\Users\User\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.g.cs
 C:\Users\User\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.baml
+C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\AddGamePage.baml
+C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\AddGamePage.g.cs
+C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.g.cs
+C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.baml

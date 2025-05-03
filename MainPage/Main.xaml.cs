@@ -124,17 +124,57 @@ namespace MainPage
         }
         private void GameDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new Uri("GamePage.xaml", UriKind.Relative));
-            var item = GameDataGrid.SelectedCells[1].Item;
-            int kiv = GameDataGrid.Items.IndexOf(item);
-            var kivi = new GamePage(kiv);
-            var rate = new GameRatingPage(kiv);
-            this.NavigationService?.Navigate(kivi);
+            var selectedGame = GameDataGrid.SelectedItem;
+            if (selectedGame != null)
+            {
+                // Dinamikus ID lekérés
+                int gameId = (int)selectedGame.GetType().GetProperty("Id").GetValue(selectedGame);
+
+                var kivi = new GamePage(gameId);
+                this.NavigationService?.Navigate(kivi);
+            }
         }
 
         private void GoBack(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
         }
+
+        private void KeresesTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string keresettSzoveg = KeresesTextBox.Text?.Trim().ToLower() ?? "";
+
+            using (var context = new GameContext())
+            {
+                IQueryable<Game> query = context.Games.Include(g => g.Képs);
+
+                if (!string.IsNullOrEmpty(keresettSzoveg))
+                {
+                    query = query.Where(g => g.Név.ToLower().Contains(keresettSzoveg));
+                }
+
+                var jatekok = query
+                    .Select(g => new
+                    {
+                        Id = g.Id,
+                        Név = g.Név,
+                        Megjelenés = g.Megjelenés,
+                        Készítő = g.Készítő,
+                        Típus = g.Típus,
+                        Platform = g.Platform,
+                        Mód = g.Mód,
+                        GÉrtékelés = g.GÉrtékelés,
+                        Értékelés = context.Értékelés
+                            .Where(e => e.GameId == g.Id && e.FelhasználóId == bejelentkezettFelhasznalo.Id)
+                            .Select(e => e.FelhasználóÉrtékelés)
+                            .FirstOrDefault(),
+                        KepUtvonal = g.Képs.FirstOrDefault().Utvonal ?? string.Empty
+                    })
+                    .ToList();
+
+                GameDataGrid.ItemsSource = jatekok;
+            }
+        }
+
     }
 }

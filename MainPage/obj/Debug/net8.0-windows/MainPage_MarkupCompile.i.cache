@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\User\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\
+C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\
 MainPage
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\User\Source\Repos\Viz_Prog_Projekt\MainPage\App.xaml
+C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\App.xaml
 8-1073947503
 3469140231
 18-578229610
-228-1515061865
+2282010297012
 AddGamePage.xaml;GamePage.xaml;GameRatingPage.xaml;LoginPage.xaml;Main.xaml;MainMenu.xaml;MainWindow.xaml;RegisterPage.xaml;
 
-False
+True
 
