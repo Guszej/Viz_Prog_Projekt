@@ -7,8 +7,16 @@
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
       Title="GamePage">
-    <Grid>
-        <Label x:Name="GameName" Content="*Jatek neve*" Foreground="White" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20"/>
+    <Grid Loaded="Grid_Loaded">
+        <Image x:Name="GameImg" Width="600" Height="800" HorizontalAlignment="Left" Margin="80,140,0,140"/>
+        <Label x:Name="GameName" Foreground="White" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20"/>
+        <Label x:Name="GameDev" Content="Dev" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,160,0,0" Width="600"/>
+        <Label x:Name="GameDate" Content="Rdate" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,295,0,0" Width="600"/>
+        <Label x:Name="GamePlatforms" Content="pLAT" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,430,0,0" Width="600"/>
+        <Label x:Name="GameType" Content="type" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,565,0,0" Width="600"/>
+        <Label x:Name="GameMode" Content="mod" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,700,0,0" Width="600"/>
+        <Label x:Name="GameRating" Content="rtae" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,835,0,0" Width="600"/>
+        <Button x:Name="btnRating" Content="Adjon meg értékelést!" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="150" Height="40" Margin="50" Click="btnRating_Click" Visibility="Hidden"/>
         <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" FontSize="20"/>
         <Button x:Name="bttnExit" Content="X" FontSize="30" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
             <Button.Style>
@@ -30,6 +38,6 @@
                 </Style>
             </Button.Style>
         </Button>
-       
+
     </Grid>
 </Page>

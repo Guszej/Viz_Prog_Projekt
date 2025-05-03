@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using MainPage.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MainPage
 {
@@ -23,13 +26,13 @@ namespace MainPage
             if (bejelentkezettFelhasznalo.Név == "Vendég")
             {
                 ErtekelesOszlop.Visibility = Visibility.Collapsed;
+                GameDataGrid.Width = 393;
             }
 
             if (bejelentkezettFelhasznalo.Rang == "Admin")
             {
                 btnAddGame.Visibility = Visibility.Visible;
             }
-
             LoadGames();
             GameDataGrid.CellEditEnding += GameDataGrid_CellEditEnding;
         }
@@ -119,9 +122,14 @@ namespace MainPage
         {
             NavigationService.Navigate(new AddGamePage(bejelentkezettFelhasznalo));
         }
-        private void GameInfoTable_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void GameDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             NavigationService.Navigate(new Uri("GamePage.xaml", UriKind.Relative));
+            var item = GameDataGrid.SelectedCells[1].Item;
+            int kiv = GameDataGrid.Items.IndexOf(item);
+            var kivi = new GamePage(kiv);
+            var rate = new GameRatingPage(kiv);
+            this.NavigationService?.Navigate(kivi);
         }
 
         private void GoBack(object sender, RoutedEventArgs e)

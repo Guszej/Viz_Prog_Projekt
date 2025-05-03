@@ -13,6 +13,9 @@
     <Compile Update="GamePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GameRatingPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
