@@ -10,7 +10,7 @@
             <TextBlock Text="Név" Foreground="White"/>
             <TextBox x:Name="txtNev" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Megjelenés (év)" Foreground="White"/>
+            <TextBlock Text="Megjelenés (év, hónap, nap)" Foreground="White"/>
             <TextBox x:Name="txtMegjelenes" Margin="0,5,0,10"/>
 
             <TextBlock Text="Készítő" Foreground="White"/>

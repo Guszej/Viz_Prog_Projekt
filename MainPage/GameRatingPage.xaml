@@ -8,13 +8,8 @@
       d:DesignHeight="1080" d:DesignWidth="1920"
       Title="GameRatingPage">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="239*"/>
-        </Grid.RowDefinitions>
         <Label x:Name="GameRatingTitle" Content="Értékelje a játékot" Foreground="White" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
-        <RichTextBox x:Name="rtxtbxRating" Width="600" Height="350" Margin="660,190,660,540" Grid.RowSpan="2"/>
-        <Button x:Name="GameRatingbtn" Content="Értékelés megadása" Width="110" Height="40" Margin="905,634,905,43" Grid.Row="1"/>
-
+        <RichTextBox x:Name="rtxtbxRating" Width="600" Height="350" Margin="660,190,660,540"/>
+        <Button x:Name="GameRatingbtn" Content="Értékelés megadása" Margin="599,545,540,69" Click="GameRatingbtn_Click"/>
     </Grid>
 </Page>

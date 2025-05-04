@@ -66,7 +66,7 @@ namespace MainPage
                 {
                     Név = felhasznalonev,
                     Email = email,
-                    Jelszó = jelszo, // Lehet kell majd kódolás
+                    Jelszó = jelszo,
                     Rang = "Alap"
                 };
 
@@ -74,8 +74,6 @@ namespace MainPage
                 context.SaveChanges();
 
                 MessageBox.Show("Sikeres regisztráció!", "Információ", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                // Opcionális: Navigálás másik oldalra
                 NavigationService.Navigate(new Uri("LoginPage.xaml", UriKind.Relative));
             }
         }

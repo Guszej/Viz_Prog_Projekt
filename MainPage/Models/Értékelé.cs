@@ -9,7 +9,7 @@ public partial class Értékelé
 
     public int GameId { get; set; }
 
-    public double FelhasználóÉrtékelés { get; set; }
+    public string FelhasználóÉrtékelés { get; set; }
 
     public int Id { get; set; }
 

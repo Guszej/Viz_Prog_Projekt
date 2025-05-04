@@ -27,11 +27,22 @@ namespace MainPage
     {
         private GameContext context = new GameContext();
         private int selectedid;
-        public GamePage(int gameId)
+        private readonly Felhasználó bejelentkezettFelhasznalo;
+        public GamePage(int gameId, Felhasználó felhasznalo)
         {
             InitializeComponent();
             selectedid = gameId;
             SelectedGame(selectedid);
+            bejelentkezettFelhasznalo = felhasznalo;
+            if (bejelentkezettFelhasznalo.Név == "Vendég")
+            {
+                btnRating.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                btnRating.Visibility = Visibility.Visible;
+            }
+
         }
         private void SelectedGame(int szam)
         {
@@ -65,7 +76,7 @@ namespace MainPage
 
         private void btnRating_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("GameRatingWindow.xaml", UriKind.Relative));
+            NavigationService.Navigate(new GameRatingPage(selectedid, bejelentkezettFelhasznalo));
         }
     }
 }

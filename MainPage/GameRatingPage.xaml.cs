@@ -21,9 +21,48 @@ namespace MainPage
     /// </summary>
     public partial class GameRatingPage : Page
     {
-        public GameRatingPage(int sel)
+        private readonly Felhasználó felhasznalo;
+        private readonly int gameId;
+        private readonly GameContext context = new GameContext();
+        public GameRatingPage(int gameId, Felhasználó felhasznalo)
         {
             InitializeComponent();
+            this.felhasznalo = felhasznalo;
+            this.gameId = gameId;
+        }
+
+        private void GameRatingbtn_Click(object sender, RoutedEventArgs e)
+        {
+            TextRange textRange = new TextRange(rtxtbxRating.Document.ContentStart, rtxtbxRating.Document.ContentEnd);
+            string userRating = textRange.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(userRating))
+            {
+                MessageBox.Show("Kérjük, adjon meg egy értékelést.");
+                return;
+            }
+
+            var existingRating = context.Értékelés.FirstOrDefault(e =>
+                e.FelhasználóId == felhasznalo.Id && e.GameId == gameId);
+
+            if (existingRating != null)
+            {
+                existingRating.FelhasználóÉrtékelés = userRating;
+            }
+            else
+            {
+                var newRating = new Értékelé
+                {
+                    FelhasználóId = felhasznalo.Id,
+                    GameId = gameId,
+                    FelhasználóÉrtékelés = userRating
+                };
+                context.Értékelés.Add(newRating);
+            }
+
+            context.SaveChanges();
+            MessageBox.Show("Értékelés elmentve!");
+            NavigationService.GoBack();
         }
     }
 }

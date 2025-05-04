@@ -600,3 +600,5 @@ C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\A
 C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\AddGamePage.g.cs
 C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.g.cs
 C:\Users\Bence\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.baml
+C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.g.cs
+C:\Users\Vmark\Source\Repos\Viz_Prog_Projekt\MainPage\obj\Debug\net8.0-windows\GameRatingPage.baml
