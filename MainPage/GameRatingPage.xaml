@@ -82,6 +82,6 @@
         <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
         <Label x:Name="GameRatingTitle" Content="Értékelje a játékot" Foreground="#f5e6c5" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
         <RichTextBox Style="{StaticResource DarkFantasyRichTextBox}" x:Name="rtxtbxRating" Width="600" Height="350" Margin="660,190,660,540"/>
-        <Button Style="{StaticResource DarkFantasyButton}" x:Name="GameRatingbtn" Content="Értékelés megadása" Width="110" Height="40" Margin="905,995,905,45" RenderTransformOrigin="0.689,4.133" Click="GameRatingbtn_Click"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="GameRatingbtn" Content="Értékelés megadása" Width="200" Height="40" Margin="905,995,905,45" RenderTransformOrigin="0.689,4.133" Click="GameRatingbtn_Click"/>
     </Grid>
 </Page>
