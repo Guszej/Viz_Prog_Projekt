@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {}
+    "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {
+    "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+        "projectUniqueName": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
         "projectName": "MainPage",
-        "projectPath": "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+        "projectPath": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
         "packagesPath": "C:\\Users\\Bence\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Bence\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\obj\\",
         "projectStyle": "PackageReference",
