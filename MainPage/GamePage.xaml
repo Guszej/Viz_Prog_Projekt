@@ -7,36 +7,62 @@
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
       Title="GamePage">
+    <Page.Resources>
+        <Style x:Key="DarkFantasyButton" TargetType="Button">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="#a1843c" Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                     BorderBrush="{TemplateBinding BorderBrush}"
+                     BorderThickness="{TemplateBinding BorderThickness}"
+                     CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2d2d2d"/>
+                                <Setter Property="BorderBrush" Value="#e5c882"/>
+                                <Setter Property="Foreground" Value="#fff6d6"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#111"/>
+                                <Setter Property="BorderBrush" Value="#c7a94b"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#e5c882" Opacity="0.8"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
     <Grid Loaded="Grid_Loaded">
         <Image x:Name="GameImg" Width="600" HorizontalAlignment="Left" Margin="230,133,0,179" Stretch="UniformToFill"/>
-        <TextBlock x:Name="GameName" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20"/>
-        <TextBlock x:Name="GameDev" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,160,0,0" Width="600"/>
-        <TextBlock x:Name="GameDate" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,295,0,0" Width="600"/>
-        <TextBlock x:Name="GamePlatforms" TextWrapping="WrapWithOverflow" Foreground="White"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,430,0,0" Width="600"/>
-        <TextBlock x:Name="GameType" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,565,0,0" Width="600"/>
-        <TextBlock x:Name="GameMode" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,700,0,0" Width="600"/>
-        <TextBlock x:Name="GameRating" TextWrapping="WrapWithOverflow" Foreground="White" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,835,0,0" Width="600"/>
-        <Button x:Name="btnRating" Content="Adjon meg értékelést!" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="150" Height="40" Margin="50" Click="btnRating_Click" Visibility="Hidden"/>
-        <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
-        <Button x:Name="bttnExit" Content="X" FontSize="30" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Red"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
+        <TextBlock x:Name="GameName" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20"/>
+        <TextBlock x:Name="GameDev" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,160,0,0" Width="600"/>
+        <TextBlock x:Name="GameDate" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,295,0,0" Width="600"/>
+        <TextBlock x:Name="GamePlatforms" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,430,0,0" Width="600"/>
+        <TextBlock x:Name="GameType" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,565,0,0" Width="600"/>
+        <TextBlock x:Name="GameMode" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,700,0,0" Width="600"/>
+        <TextBlock x:Name="GameRating" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,835,0,0" Width="600"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="btnRating" Content="Adjon meg értékelést!" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="170" Height="40" Margin="50" Click="btnRating_Click" Visibility="Hidden"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnExit" Content="X" FontSize="30" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click"/>
     </Grid>
 </Page>

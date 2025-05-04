@@ -6,17 +6,137 @@
       xmlns:local="clr-namespace:MainPage"
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
-      Title="Main">
-
+      Title="Main"
+      >
+    <Page.Resources>
+        <Style x:Key="DarkFantasyButton" TargetType="Button">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="#a1843c" Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                         BorderBrush="{TemplateBinding BorderBrush}"
+                         BorderThickness="{TemplateBinding BorderThickness}"
+                         CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2d2d2d"/>
+                                <Setter Property="BorderBrush" Value="#e5c882"/>
+                                <Setter Property="Foreground" Value="#fff6d6"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#111"/>
+                                <Setter Property="BorderBrush" Value="#c7a94b"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#e5c882" Opacity="0.8"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="DataGrid" x:Key="DarkFantasyDataGrid">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HeadersVisibility" Value="All"/>
+            <Setter Property="RowBackground" Value="#262626"/>
+            <Setter Property="AlternatingRowBackground" Value="#1f1f1f"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#3a3a3a"/>
+            <Setter Property="VerticalGridLinesBrush" Value="#3a3a3a"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="RowHeaderWidth" Value="0"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="0" Color="#a1843c" Opacity="0.3"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#2d2d2d"/>
+                        <Setter Property="Foreground" Value="#f0d9a9"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="BorderBrush" Value="#a1843c"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="CellStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Padding" Value="5"/>
+                        <Setter Property="BorderBrush" Value="#3a3a3a"/>
+                        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#604c1f"/>
+                                <Setter Property="Foreground" Value="#ffffff"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DarkFantasyTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="CaretBrush" Value="#f5e6c5"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#a1843c" Opacity="0.4"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#e5c882"/>
+                    <Setter Property="Background" Value="#2d2d2d"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="12" ShadowDepth="0" Color="#e5c882" Opacity="0.7"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
     <Grid>
-        <TextBox x:Name="KeresesTextBox" Width="250" Height="25" Margin="0,98,0,0"
+        <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="KeresesTextBox" Width="250" Height="25" Margin="0,98,0,0"
          VerticalAlignment="Top" HorizontalAlignment="Center"
          TextChanged="KeresesTextBox_TextChanged"/>
-        <Label Content="Játékaink" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
-        <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
-        <DataGrid Width="600" x:Name="GameDataGrid" MouseDoubleClick="GameDataGrid_MouseDoubleClick"
+        <Label Content="Játékaink" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="#f5e6c5"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <DataGrid Style="{StaticResource DarkFantasyDataGrid}" Width="600" x:Name="GameDataGrid" MouseDoubleClick="GameDataGrid_MouseDoubleClick"
           ColumnWidth="200" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserAddRows="False"
-          Background="Transparent" BorderThickness="0" AutoGenerateColumns="False" Margin="660,180,660,90">
+          Background="Transparent" BorderThickness="0" AutoGenerateColumns="False" Margin="660,180,660,90" VerticalScrollBarVisibility="Hidden">
             <DataGrid.Columns>
                 <DataGridTemplateColumn Header="Kép" Width="120">
                     <DataGridTemplateColumn.CellTemplate>
@@ -48,26 +168,7 @@
                 </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Red"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
-        <Button x:Name="btnAddGame" Content="Játék hozzáadása" Click="AddGame_Click" Height="30" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="20" Visibility="Collapsed"/>
+        <Button Style="{StaticResource DarkFantasyButton}"  x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="btnAddGame" Content="Játék hozzáadása" Click="AddGame_Click" Height="30" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="20" Visibility="Collapsed"/>
     </Grid>
 </Page>

@@ -2,43 +2,120 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="LoginPage">
+    <Page.Resources>
+        <Style x:Key="DarkFantasyButton" TargetType="Button">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="#a1843c" Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                     BorderBrush="{TemplateBinding BorderBrush}"
+                     BorderThickness="{TemplateBinding BorderThickness}"
+                     CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2d2d2d"/>
+                                <Setter Property="BorderBrush" Value="#e5c882"/>
+                                <Setter Property="Foreground" Value="#fff6d6"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#111"/>
+                                <Setter Property="BorderBrush" Value="#c7a94b"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#e5c882" Opacity="0.8"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DarkFantasyTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="CaretBrush" Value="#f5e6c5"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#a1843c" Opacity="0.4"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#e5c882"/>
+                    <Setter Property="Background" Value="#2d2d2d"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="12" ShadowDepth="0" Color="#e5c882" Opacity="0.7"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="DarkFantasyPasswordBox" TargetType="PasswordBox">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="CaretBrush" Value="#f5e6c5"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#a1843c" Opacity="0.4"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#e5c882"/>
+                    <Setter Property="Background" Value="#2d2d2d"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="12" ShadowDepth="0" Color="#e5c882" Opacity="0.7"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
 
     <Grid>
         <Label Content="Belépés" HorizontalAlignment="Center" Height="50" Margin="0,10,0,0" 
-              VerticalAlignment="Top" Width="100" FontSize="25" Foreground="White"/>
+              VerticalAlignment="Top" Width="100" FontSize="25" Foreground="#f5e6c5"/>
         <Label Content="Felhasználónév / E-mail cím:" HorizontalAlignment="Center" VerticalAlignment="Top" 
-               FontSize="14" Margin="0,95,154,0" Foreground="White"/>
-        <TextBox x:Name="lgUser" HorizontalAlignment="Center" Margin="0,125,0,0" 
+               FontSize="14" Margin="0,95,154,0" Foreground="#f5e6c5"/>
+        <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="lgUser" HorizontalAlignment="Center" Margin="0,125,0,0" 
                  VerticalAlignment="Top" Width="330" Height="25" TextWrapping="Wrap"
                  TextChanged="lgUser_TextChanged"/>
         <Label Content="Jelszó:" HorizontalAlignment="Center" Margin="0,155,287,0" 
-               VerticalAlignment="Top" FontSize="14" Foreground="White"/>
-        <PasswordBox x:Name="lgPWD" HorizontalAlignment="Center" VerticalAlignment="Top"
+               VerticalAlignment="Top" FontSize="14" Foreground="#f5e6c5"/>
+        <PasswordBox Style="{StaticResource DarkFantasyPasswordBox}" x:Name="lgPWD" HorizontalAlignment="Center" VerticalAlignment="Top"
                      Width="330" Height="25" Margin="0,185,0,0" PasswordChanged="lgPWD_TextChanged"/>
-        <Button Content="Belépés" HorizontalAlignment="Center" Margin="0,250,0,0" 
+        <Button Style="{StaticResource DarkFantasyButton}" Content="Belépés" HorizontalAlignment="Center" Margin="0,250,0,0" 
                 VerticalAlignment="Top" Height="30" Width="100" Click="Button_Click"/>
-        <Button Content="Vissza" HorizontalAlignment="Left" Margin="10,10,0,0" 
+        <Button Style="{StaticResource DarkFantasyButton}" Content="Vissza" HorizontalAlignment="Left" Margin="10,10,0,0" 
                 VerticalAlignment="Top" Height="30" Width="75" Click="GoBack"/>
-
-        <Button x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
-            <Button.Style>
-                <Style TargetType="{x:Type Button}">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type Button}">
-                                <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Red"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Button.Style>
-        </Button>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click"/>
     </Grid>
 </Page>

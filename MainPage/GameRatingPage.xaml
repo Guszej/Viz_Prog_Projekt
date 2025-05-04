@@ -7,10 +7,81 @@
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
       Title="GameRatingPage">
+    <Page.Resources>
+        <Style x:Key="DarkFantasyButton" TargetType="Button">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="#a1843c" Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                     BorderBrush="{TemplateBinding BorderBrush}"
+                     BorderThickness="{TemplateBinding BorderThickness}"
+                     CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2d2d2d"/>
+                                <Setter Property="BorderBrush" Value="#e5c882"/>
+                                <Setter Property="Foreground" Value="#fff6d6"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#111"/>
+                                <Setter Property="BorderBrush" Value="#c7a94b"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#e5c882" Opacity="0.8"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DarkFantasyRichTextBox" TargetType="RichTextBox">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="CaretBrush" Value="#f5e6c5"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#a1843c" Opacity="0.4"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#e5c882"/>
+                    <Setter Property="Background" Value="#2d2d2d"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="12" ShadowDepth="0" Color="#e5c882" Opacity="0.7"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
     <Grid>
-        <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
-        <Label x:Name="GameRatingTitle" Content="Értékelje a játékot" Foreground="White" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
-        <RichTextBox x:Name="rtxtbxRating" Width="600" Height="350" Margin="660,190,660,540"/>
-        <Button x:Name="GameRatingbtn" Content="Értékelés megadása" Width="110" Height="40" Margin="905,995,905,45" RenderTransformOrigin="0.689,4.133" Click="GameRatingbtn_Click"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <Label x:Name="GameRatingTitle" Content="Értékelje a játékot" Foreground="#f5e6c5" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0"/>
+        <RichTextBox Style="{StaticResource DarkFantasyRichTextBox}" x:Name="rtxtbxRating" Width="600" Height="350" Margin="660,190,660,540"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="GameRatingbtn" Content="Értékelés megadása" Width="110" Height="40" Margin="905,995,905,45" RenderTransformOrigin="0.689,4.133" Click="GameRatingbtn_Click"/>
     </Grid>
 </Page>

@@ -2,34 +2,104 @@
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="AddGamePage">
-
+    <Page.Resources>
+        <Style x:Key="DarkFantasyButton" TargetType="Button">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="0" Color="#a1843c" Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                     BorderBrush="{TemplateBinding BorderBrush}"
+                     BorderThickness="{TemplateBinding BorderThickness}"
+                     CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#2d2d2d"/>
+                                <Setter Property="BorderBrush" Value="#e5c882"/>
+                                <Setter Property="Foreground" Value="#fff6d6"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#111"/>
+                                <Setter Property="BorderBrush" Value="#c7a94b"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#e5c882" Opacity="0.8"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DarkFantasyTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="#1a1a1a"/>
+            <Setter Property="Foreground" Value="#f5e6c5"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="6,3"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="#a1843c"/>
+            <Setter Property="CaretBrush" Value="#f5e6c5"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#a1843c" Opacity="0.4"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="BorderBrush" Value="#e5c882"/>
+                    <Setter Property="Background" Value="#2d2d2d"/>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect BlurRadius="12" ShadowDepth="0" Color="#e5c882" Opacity="0.7"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
     <Grid>
-        <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
-            <TextBlock Text="Játék hozzáadása" FontSize="24" Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <TextBlock Style="{StaticResource DarkFantasyTextBox}" Text="Játék hozzáadása" FontSize="24" Foreground="#f5e6c5" HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
-            <TextBlock Text="Név" Foreground="White"/>
-            <TextBox x:Name="txtNev" Margin="0,5,0,10"/>
+            <TextBlock Text="Név" Foreground="#f5e6c5"/>
+            <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="txtNev" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Megjelenés (év/hónap/nap)" Foreground="White"/>
-            <TextBox x:Name="txtMegjelenes" Margin="0,5,0,10"/>
+            <TextBlock Text="Megjelenés (év/hónap/nap)" Foreground="#f5e6c5"/>
+            <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="txtMegjelenes" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Készítő" Foreground="White"/>
-            <TextBox x:Name="txtKeszito" Margin="0,5,0,10"/>
+            <TextBlock Text="Készítő" Foreground="#f5e6c5"/>
+            <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="txtKeszito" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Típus" Foreground="White"/>
-            <TextBox x:Name="txtTipus" Margin="0,5,0,10"/>
+            <TextBlock Text="Típus" Foreground="#f5e6c5"/>
+            <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="txtTipus" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Platform" Foreground="White"/>
-            <TextBox x:Name="txtPlatform" Margin="0,5,0,10"/>
+            <TextBlock Text="Platform" Foreground="#f5e6c5"/>
+            <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="txtPlatform" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Mód" Foreground="White"/>
-            <TextBox x:Name="txtMod" Margin="0,5,0,10"/>
+            <TextBlock Text="Mód" Foreground="#f5e6c5"/>
+            <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="txtMod" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Értékelés" Foreground="White"/>
-            <TextBox x:Name="txtertek" Margin="0,5,0,10"/>
+            <TextBlock Text="Értékelés" Foreground="#f5e6c5"/>
+            <TextBox Style="{StaticResource DarkFantasyTextBox}" x:Name="txtertek" Margin="0,5,0,10"/>
 
-            <Button Content="Játék mentése" Click="Mentes_Click" Height="30" Background="Green" Foreground="White"/>
+            <Button Style="{StaticResource DarkFantasyButton}" Content="Játék mentése" Click="Mentes_Click" Height="30" Foreground="White"/>
         </StackPanel>
     </Grid>
 </Page>
