@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\models\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:models\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\gameratingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:gameratingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\addgamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +13,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\addgamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:addgamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:gamepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:gamepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\models\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:models\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\gameratingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|solutionrelative:gameratingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9878CD5A-02B7-46EE-BF90-815965968499}|MainPage.csproj|c:\\users\\bence\\source\\repos\\viz_prog_projekt\\mainpage\\gameratingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "GameContext.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Models\\GameContext.cs",
               "RelativeDocumentMoniker": "Models\\GameContext.cs",
@@ -66,19 +66,19 @@
               "RelativeToolTip": "Models\\GameContext.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAYwH0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T19:51:51.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T19:51:51.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "AddGamePage.xaml",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\AddGamePage.xaml",
               "RelativeDocumentMoniker": "AddGamePage.xaml",
               "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\AddGamePage.xaml",
               "RelativeToolTip": "AddGamePage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-03T19:04:08.118Z"
+              "WhenOpened": "2025-05-03T19:04:08.118Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -94,20 +94,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Main.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Main.xaml.cs",
               "RelativeDocumentMoniker": "Main.xaml.cs",
-              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Main.xaml.cs",
-              "RelativeToolTip": "Main.xaml.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAmwIcAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\Main.xaml.cs*",
+              "RelativeToolTip": "Main.xaml.cs*",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAmwH4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-03T18:46:11.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GamePage.xaml",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\GamePage.xaml",
               "RelativeDocumentMoniker": "GamePage.xaml",
@@ -119,40 +119,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "GamePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\GamePage.xaml.cs",
               "RelativeDocumentMoniker": "GamePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\GamePage.xaml.cs*",
-              "RelativeToolTip": "GamePage.xaml.cs*",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\GamePage.xaml.cs",
+              "RelativeToolTip": "GamePage.xaml.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAIwCEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T13:13:50.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T13:13:50.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GameRatingPage.xaml",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\GameRatingPage.xaml",
               "RelativeDocumentMoniker": "GameRatingPage.xaml",
               "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\GameRatingPage.xaml",
               "RelativeToolTip": "GameRatingPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-03T18:32:37.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T18:32:37.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "AddGamePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\AddGamePage.xaml.cs",
               "RelativeDocumentMoniker": "AddGamePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\AddGamePage.xaml.cs",
-              "RelativeToolTip": "AddGamePage.xaml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwC4AAAAUAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\AddGamePage.xaml.cs*",
+              "RelativeToolTip": "AddGamePage.xaml.cs*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwEgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-03T19:04:18.179Z"
+              "WhenOpened": "2025-05-03T19:04:18.179Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

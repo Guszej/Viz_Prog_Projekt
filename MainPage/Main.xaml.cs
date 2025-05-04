@@ -40,7 +40,8 @@ namespace MainPage
         private void LoadGames()
         {
             var gamesWithImages = (from g in _context.Games
-                                   join k in _context.Képs on g.Id equals k.GameId
+                                   join k in _context.Képs on g.Id equals k.GameId into kepek
+                                   from k in kepek.DefaultIfEmpty() 
                                    select new
                                    {
                                        g.Id,
@@ -55,7 +56,7 @@ namespace MainPage
                                            .Where(e => e.GameId == g.Id && e.FelhasználóId == bejelentkezettFelhasznalo.Id)
                                            .Select(e => e.FelhasználóÉrtékelés)
                                            .FirstOrDefault(),
-                                       KepUtvonal = k.Utvonal
+                                       KepUtvonal = k != null ? k.Utvonal : ""
                                    }).ToList();
 
             GameDataGrid.ItemsSource = gamesWithImages;
@@ -96,7 +97,7 @@ namespace MainPage
                         _context.Értékelés.Add(uj);
                     }
 
-                    // GÉrtékelés frissítése
+                    
                     var ertekelesek = _context.Értékelés
                         .Where(x => x.GameId == gameId)
                         .ToList();
@@ -109,7 +110,7 @@ namespace MainPage
 
                     _context.SaveChanges();
                     MessageBox.Show("Értékelés mentve!");
-                    LoadGames(); // Frissítjük a táblázatot
+                    LoadGames(); 
                 }
             }
         }
@@ -120,14 +121,16 @@ namespace MainPage
         }
         private void AddGame_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AddGamePage(bejelentkezettFelhasznalo));
+            var addGamePage = new AddGamePage(bejelentkezettFelhasznalo);
+            addGamePage.JatekHozzaadva += (s, args) => LoadGames(); 
+            NavigationService.Navigate(addGamePage);
         }
         private void GameDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             var selectedGame = GameDataGrid.SelectedItem;
             if (selectedGame != null)
             {
-                // Dinamikus ID lekérés
+                
                 int gameId = (int)selectedGame.GetType().GetProperty("Id").GetValue(selectedGame);
 
                 var kivi = new GamePage(gameId);
@@ -175,6 +178,8 @@ namespace MainPage
                 GameDataGrid.ItemsSource = jatekok;
             }
         }
+
+       
 
     }
 }
