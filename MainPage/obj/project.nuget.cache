@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "wAIpq0pR5xE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Vmark\\Source\\Repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+=======
+  "dgSpecHash": "65px0+/uD90=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bence\\source\\repos\\Viz_Prog_Projekt\\MainPage\\MainPage.csproj",
+>>>>>>> 3578a8b3a784c09087ddc4ff5d014923dc2e577d
   "expectedPackageFiles": [
     "C:\\Users\\Vmark\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Vmark\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

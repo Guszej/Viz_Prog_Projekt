@@ -21,10 +21,10 @@
           Background="Transparent" BorderThickness="0" AutoGenerateColumns="False">
            
             <DataGrid.Columns>
-                <DataGridTemplateColumn Header="Kép" Width="165">
+                <DataGridTemplateColumn Header="Kép" Width="120">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding KepUtvonal}" Width="160" Height="160"/>
+                            <Image Source="{Binding KepUtvonal}" Width="120" Height="120"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
             </DataGridTemplateColumn>
