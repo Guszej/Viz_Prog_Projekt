@@ -60,63 +60,6 @@ namespace MainPage
 
             GameDataGrid.ItemsSource = gamesWithImages;
         }
-
-<<<<<<< HEAD
-=======
-        private void GameDataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
-        {
-            if (e.Column.Header.ToString() == "Értékelés")
-            {
-                var row = (dynamic)e.Row.Item;
-                var textbox = e.EditingElement as TextBox;
-                if (textbox != null && double.TryParse(textbox.Text, out double ujErtekeles))
-                {
-                    var gameId = (int)row.Id;
-
-                    if (ujErtekeles < 0 || ujErtekeles > 10)
-                    {
-                        MessageBox.Show("Adj meg egy számot 0 és 10 között!");
-                        return;
-                    }
-
-                    var letezo = _context.Értékelés.FirstOrDefault(x =>
-                        x.FelhasználóId == bejelentkezettFelhasznalo.Id &&
-                        x.GameId == gameId);
-
-                    if (letezo != null)
-                    {
-                        letezo.FelhasználóÉrtékelés = ujErtekeles;
-                    }
-                    else
-                    {
-                        var uj = new Értékelé
-                        {
-                            FelhasználóId = bejelentkezettFelhasznalo.Id,
-                            GameId = gameId,
-                            FelhasználóÉrtékelés = ujErtekeles
-                        };
-                        _context.Értékelés.Add(uj);
-                    }
-
-                    
-                    var ertekelesek = _context.Értékelés
-                        .Where(x => x.GameId == gameId)
-                        .ToList();
-
-                    var game = _context.Games.FirstOrDefault(x => x.Id == gameId);
-                    if (game != null && ertekelesek.Count > 0)
-                    {
-                        game.GÉrtékelés = (float)ertekelesek.Average(x => x.FelhasználóÉrtékelés);
-                    }
-
-                    _context.SaveChanges();
-                    MessageBox.Show("Értékelés mentve!");
-                    LoadGames(); 
-                }
-            }
-        }
-
->>>>>>> 3578a8b3a784c09087ddc4ff5d014923dc2e577d
         private void bttnExit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();

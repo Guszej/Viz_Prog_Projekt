@@ -103,7 +103,6 @@ public partial class GameContext : DbContext
         modelBuilder.Entity<Értékelé>(entity =>
         {
             entity.Property(e => e.Id)
-                .ValueGeneratedNever()
                 .HasColumnName("ID");
             entity.Property(e => e.FelhasználóId).HasColumnName("Felhasználó.ID");
             entity.Property(e => e.FelhasználóÉrtékelés).HasColumnName("Felhasználó_értékelés");
