@@ -30,7 +30,6 @@ namespace MainPage
             this.felhasznalo = felhasznalo;
             this.gameId = gameId;
         }
-
         private void GameRatingbtn_Click(object sender, RoutedEventArgs e)
         {
             TextRange textRange = new TextRange(rtxtbxRating.Document.ContentStart, rtxtbxRating.Document.ContentEnd);
@@ -59,9 +58,12 @@ namespace MainPage
                 };
                 context.Értékelés.Add(newRating);
             }
-
             context.SaveChanges();
             MessageBox.Show("Értékelés elmentve!");
+            NavigationService.GoBack();
+        }
+        private void GoBack(object sender, RoutedEventArgs e)
+        {
             NavigationService.GoBack();
         }
     }

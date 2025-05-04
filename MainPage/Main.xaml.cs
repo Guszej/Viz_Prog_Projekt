@@ -125,8 +125,5 @@ namespace MainPage
                 GameDataGrid.ItemsSource = jatekok;
             }
         }
-
-       
-
     }
 }

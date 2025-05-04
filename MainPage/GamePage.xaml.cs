@@ -49,15 +49,20 @@ namespace MainPage
             var sgame = (from a in context.Games
                          where a.Id == szam
                          select a);
+            var skep = (from a in context.Képs
+                        where a.GameId == szam
+                        select a.Utvonal).FirstOrDefault();
+            ImageSource image = new BitmapImage(new Uri(skep));
             foreach (var item in sgame)
             {
-                GameName.Content = item.Név;
-                GameDev.Content = $"Fejlesztők: {item.Készítő}";
-                GameDate.Content = $"Megjelenési dátum: {item.Megjelenés}";
-                GamePlatforms.Content = $"Platform: {item.Platform}";
-                GameType.Content = $"Genre: {item.Típus}";
-                GameMode.Content = $"Mód: {item.Mód}";
-                GameRating.Content = $"Értékelés: {item.GÉrtékelés}";
+                GameImg.Source = image;
+                GameName.Text = item.Név;
+                GameDev.Text = $"Fejlesztők: {item.Készítő}";
+                GameDate.Text = $"Megjelenési dátum: {item.Megjelenés}";
+                GamePlatforms.Text = $"Platform: {item.Platform}";
+                GameType.Text = $"Genre: {item.Típus}";
+                GameMode.Text = $"Mód: {item.Mód}";
+                GameRating.Text = $"Értékelés: {item.GÉrtékelés}";
             }
         }
         private void bttnExit_Click(object sender, RoutedEventArgs e)

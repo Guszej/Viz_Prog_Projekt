@@ -52,13 +52,9 @@ namespace MainPage
                     Mód = txtMod.Text,
                     GÉrtékelés = double.Parse(txtertek.Text),
                 };
-
                 _context.Games.Add(ujJatek);
                 _context.SaveChanges();
-
-                
                 JatekHozzaadva?.Invoke(this, EventArgs.Empty);
-
                 MessageBox.Show("Játék sikeresen hozzáadva!");
                 NavigationService.GoBack();
             }
@@ -70,6 +66,10 @@ namespace MainPage
 
                 MessageBox.Show("Hiba történt: " + uzenet, "Hiba", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+        private void GoBack(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }

@@ -7,36 +7,45 @@
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
       Title="Main">
-    
+
     <Grid>
-        <TextBox x:Name="KeresesTextBox" Width="200" Margin="0,90,127,0"
-         VerticalAlignment="Top" HorizontalAlignment="Right"
-         TextChanged="KeresesTextBox_TextChanged"
-         />
+        <TextBox x:Name="KeresesTextBox" Width="250" Height="25" Margin="0,98,0,0"
+         VerticalAlignment="Top" HorizontalAlignment="Center"
+         TextChanged="KeresesTextBox_TextChanged"/>
         <Label Content="Játékaink" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
         <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
-        <DataGrid Height="900" Width="600" x:Name="GameDataGrid" MouseDoubleClick="GameDataGrid_MouseDoubleClick"
+        <DataGrid Width="600" x:Name="GameDataGrid" MouseDoubleClick="GameDataGrid_MouseDoubleClick"
           ColumnWidth="200" CanUserResizeColumns="False" CanUserReorderColumns="False" CanUserAddRows="False"
-          AlternatingRowBackground="DarkGray"
-          Background="Transparent" BorderThickness="0" AutoGenerateColumns="False">
-           
+          Background="Transparent" BorderThickness="0" AutoGenerateColumns="False" Margin="660,180,660,90">
             <DataGrid.Columns>
                 <DataGridTemplateColumn Header="Kép" Width="120">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding KepUtvonal}" Width="120" Height="120"/>
+                            <Image Source="{Binding KepUtvonal}" Width="120" Height="160" Stretch="Fill"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
-            </DataGridTemplateColumn>
+                </DataGridTemplateColumn>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id, Mode=OneWay}" Width="50"/>
-                <DataGridTextColumn Header="Név" Binding="{Binding Név, Mode=OneWay}" Width="200"/>
+                <DataGridTextColumn Header="Név" Binding="{Binding Név, Mode=OneWay}" Width="200">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
                 <DataGridTextColumn Header="Megjelenés" Binding="{Binding Megjelenés, Mode=OneWay}" Width="100" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Készítő" Binding="{Binding Készítő, Mode=OneWay}" Width="150" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Típus" Binding="{Binding Típus, Mode=OneWay}" Width="100" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Platform" Binding="{Binding Platform, Mode=OneWay}" Width="100" Visibility="Hidden"/>
                 <DataGridTextColumn Header="Mód" Binding="{Binding Mód, Mode=OneWay}" Width="80" Visibility="Hidden"/>
                 <DataGridTextColumn Header="G_Értékelés" Binding="{Binding GÉrtékelés, Mode=OneWay}" Width="80" Visibility="Hidden"/>
-                <DataGridTextColumn x:Name="ErtekelesOszlop" Header="Értékelés" Binding="{Binding Értékelés, Mode=OneWay}" Width="207"/>
+                <DataGridTextColumn x:Name="ErtekelesOszlop" Header="Értékelés" Binding="{Binding Értékelés, Mode=OneWay}" Width="207">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="bttnExit" Content="X" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click">
@@ -59,8 +68,6 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="btnAddGame" Content="Játék hozzáadása" Click="AddGame_Click" Height="30" Width="150"
-        HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,60,0" Visibility="Collapsed"/>
+        <Button x:Name="btnAddGame" Content="Játék hozzáadása" Click="AddGame_Click" Height="30" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="20" Visibility="Collapsed"/>
     </Grid>
-    
 </Page>

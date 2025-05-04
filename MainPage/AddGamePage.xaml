@@ -3,14 +3,15 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="AddGamePage">
 
-    <Grid Background="#1e1e1e" Margin="20">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Background="#2e2e2e">
+    <Grid>
+        <Button x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
             <TextBlock Text="Játék hozzáadása" FontSize="24" Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
             <TextBlock Text="Név" Foreground="White"/>
             <TextBox x:Name="txtNev" Margin="0,5,0,10"/>
 
-            <TextBlock Text="Megjelenés (év, hónap, nap)" Foreground="White"/>
+            <TextBlock Text="Megjelenés (év/hónap/nap)" Foreground="White"/>
             <TextBox x:Name="txtMegjelenes" Margin="0,5,0,10"/>
 
             <TextBlock Text="Készítő" Foreground="White"/>
