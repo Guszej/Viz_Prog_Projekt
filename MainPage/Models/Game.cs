@@ -24,4 +24,5 @@ public partial class Game
     public virtual ICollection<Kép> Képs { get; set; } = new List<Kép>();
 
     public virtual ICollection<Értékelé> Értékelés { get; set; } = new List<Értékelé>();
+    
 }

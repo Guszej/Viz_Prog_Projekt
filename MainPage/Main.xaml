@@ -141,7 +141,11 @@
                 <DataGridTemplateColumn Header="Kép" Width="120">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding KepUtvonal}" Width="120" Height="160" Stretch="Fill"/>
+                            <Image Width="120" Height="160" Stretch="Fill">
+                                <Image.Source>
+                                    <Binding Path="KepUtvonal" />
+                                </Image.Source>
+                            </Image>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

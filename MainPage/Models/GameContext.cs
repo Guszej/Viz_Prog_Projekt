@@ -91,7 +91,7 @@ public partial class GameContext : DbContext
                 .HasColumnName("GameID");
 
             entity.Property(e => e.Utvonal)
-                .HasMaxLength(255)
+                .HasColumnType("nvarchar(max)")
                 .HasColumnName("Utvonal");
 
             entity.HasOne(d => d.Game)

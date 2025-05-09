@@ -12,6 +12,206 @@
     <None Remove="Images\backgrndimg.png" />
     <None Remove="Images\kep.png" />
     <None Remove="jatekkep\RC.jpg" />
+    <None Remove="Kepek\1.jpg" />
+    <None Remove="Kepek\10.jpg" />
+    <None Remove="Kepek\100.jpg" />
+    <None Remove="Kepek\101.JPG" />
+    <None Remove="Kepek\102.jpg" />
+    <None Remove="Kepek\103.jpg" />
+    <None Remove="Kepek\104.jpg" />
+    <None Remove="Kepek\105.jpg" />
+    <None Remove="Kepek\106.jpg" />
+    <None Remove="Kepek\107.jpg" />
+    <None Remove="Kepek\108.jpg" />
+    <None Remove="Kepek\109.jpg" />
+    <None Remove="Kepek\11.jpg" />
+    <None Remove="Kepek\110.JPG" />
+    <None Remove="Kepek\111.jpg" />
+    <None Remove="Kepek\112.jpg" />
+    <None Remove="Kepek\113.jpg" />
+    <None Remove="Kepek\114.jpg" />
+    <None Remove="Kepek\115.JPG" />
+    <None Remove="Kepek\116.JPG" />
+    <None Remove="Kepek\117.jpg" />
+    <None Remove="Kepek\118.jpg" />
+    <None Remove="Kepek\119.JPG" />
+    <None Remove="Kepek\12.jpg" />
+    <None Remove="Kepek\120.jpg" />
+    <None Remove="Kepek\121.jpg" />
+    <None Remove="Kepek\122.JPG" />
+    <None Remove="Kepek\123.jpg" />
+    <None Remove="Kepek\124.JPG" />
+    <None Remove="Kepek\125.jpg" />
+    <None Remove="Kepek\126.jpg" />
+    <None Remove="Kepek\127.jpg" />
+    <None Remove="Kepek\128.jpg" />
+    <None Remove="Kepek\129.jpg" />
+    <None Remove="Kepek\13.jpg" />
+    <None Remove="Kepek\130.jpg" />
+    <None Remove="Kepek\131.jpg" />
+    <None Remove="Kepek\132.jpg" />
+    <None Remove="Kepek\133.jpg" />
+    <None Remove="Kepek\134.jpg" />
+    <None Remove="Kepek\135.jpg" />
+    <None Remove="Kepek\136.JPG" />
+    <None Remove="Kepek\137.jpg" />
+    <None Remove="Kepek\138.jpg" />
+    <None Remove="Kepek\139.jpg" />
+    <None Remove="Kepek\14.jpg" />
+    <None Remove="Kepek\140.jpg" />
+    <None Remove="Kepek\141.JPG" />
+    <None Remove="Kepek\142.jpg" />
+    <None Remove="Kepek\143.jpg" />
+    <None Remove="Kepek\144.jpg" />
+    <None Remove="Kepek\145.jpg" />
+    <None Remove="Kepek\146.jpg" />
+    <None Remove="Kepek\147.JPG" />
+    <None Remove="Kepek\148.jpg" />
+    <None Remove="Kepek\149.jpg" />
+    <None Remove="Kepek\15.jpg" />
+    <None Remove="Kepek\150.jpg" />
+    <None Remove="Kepek\151.jpg" />
+    <None Remove="Kepek\152.jpg" />
+    <None Remove="Kepek\153.jpg" />
+    <None Remove="Kepek\154.jpg" />
+    <None Remove="Kepek\155.jpg" />
+    <None Remove="Kepek\156.JPG" />
+    <None Remove="Kepek\157.jpg" />
+    <None Remove="Kepek\158.jpg" />
+    <None Remove="Kepek\159.jpg" />
+    <None Remove="Kepek\16.JPG" />
+    <None Remove="Kepek\160.JPG" />
+    <None Remove="Kepek\161.jpg" />
+    <None Remove="Kepek\162.JPG" />
+    <None Remove="Kepek\163.jpg" />
+    <None Remove="Kepek\164.jpg" />
+    <None Remove="Kepek\165.JPG" />
+    <None Remove="Kepek\166.jpg" />
+    <None Remove="Kepek\167.jpg" />
+    <None Remove="Kepek\168.jpg" />
+    <None Remove="Kepek\169.jpg" />
+    <None Remove="Kepek\17.jpg" />
+    <None Remove="Kepek\170.jpg" />
+    <None Remove="Kepek\171.JPG" />
+    <None Remove="Kepek\172.jpg" />
+    <None Remove="Kepek\173.jpg" />
+    <None Remove="Kepek\174.jpg" />
+    <None Remove="Kepek\175.JPG" />
+    <None Remove="Kepek\176.JPG" />
+    <None Remove="Kepek\177.jpg" />
+    <None Remove="Kepek\178.JPG" />
+    <None Remove="Kepek\179.jpg" />
+    <None Remove="Kepek\18.jpg" />
+    <None Remove="Kepek\180.jpg" />
+    <None Remove="Kepek\181.jpg" />
+    <None Remove="Kepek\182.JPG" />
+    <None Remove="Kepek\183.jpg" />
+    <None Remove="Kepek\184.jpg" />
+    <None Remove="Kepek\185.jpg" />
+    <None Remove="Kepek\186.jpg" />
+    <None Remove="Kepek\187.JPG" />
+    <None Remove="Kepek\188.jpg" />
+    <None Remove="Kepek\189.jpg" />
+    <None Remove="Kepek\19.jpg" />
+    <None Remove="Kepek\190.jpg" />
+    <None Remove="Kepek\191.JPG" />
+    <None Remove="Kepek\192.jpg" />
+    <None Remove="Kepek\193.jpg" />
+    <None Remove="Kepek\194.JPG" />
+    <None Remove="Kepek\195.jpg" />
+    <None Remove="Kepek\196.JPG" />
+    <None Remove="Kepek\197.jpg" />
+    <None Remove="Kepek\198.JPG" />
+    <None Remove="Kepek\199.jpg" />
+    <None Remove="Kepek\2.jpg" />
+    <None Remove="Kepek\20.jpg" />
+    <None Remove="Kepek\200.jpg" />
+    <None Remove="Kepek\21.jpg" />
+    <None Remove="Kepek\22.jpg" />
+    <None Remove="Kepek\23.jpg" />
+    <None Remove="Kepek\24.jpg" />
+    <None Remove="Kepek\25.jpg" />
+    <None Remove="Kepek\26.jpg" />
+    <None Remove="Kepek\27.jpg" />
+    <None Remove="Kepek\28.jpg" />
+    <None Remove="Kepek\29.JPG" />
+    <None Remove="Kepek\3.jpg" />
+    <None Remove="Kepek\30.JPG" />
+    <None Remove="Kepek\31.JPG" />
+    <None Remove="Kepek\32.jpg" />
+    <None Remove="Kepek\33.jpg" />
+    <None Remove="Kepek\34.jpg" />
+    <None Remove="Kepek\35.jpg" />
+    <None Remove="Kepek\36.JPG" />
+    <None Remove="Kepek\37.JPG" />
+    <None Remove="Kepek\38.JPG" />
+    <None Remove="Kepek\39.JPG" />
+    <None Remove="Kepek\4.jpg" />
+    <None Remove="Kepek\40.JPG" />
+    <None Remove="Kepek\41.JPG" />
+    <None Remove="Kepek\42.JPG" />
+    <None Remove="Kepek\43.JPG" />
+    <None Remove="Kepek\44.JPG" />
+    <None Remove="Kepek\45.JPG" />
+    <None Remove="Kepek\46.JPG" />
+    <None Remove="Kepek\47.JPG" />
+    <None Remove="Kepek\48.JPG" />
+    <None Remove="Kepek\49.JPG" />
+    <None Remove="Kepek\5.jpg" />
+    <None Remove="Kepek\50.JPG" />
+    <None Remove="Kepek\51.JPG" />
+    <None Remove="Kepek\52.JPG" />
+    <None Remove="Kepek\53.JPG" />
+    <None Remove="Kepek\54.JPG" />
+    <None Remove="Kepek\55.JPG" />
+    <None Remove="Kepek\56.JPG" />
+    <None Remove="Kepek\57.JPG" />
+    <None Remove="Kepek\58.JPG" />
+    <None Remove="Kepek\59.JPG" />
+    <None Remove="Kepek\6.jpg" />
+    <None Remove="Kepek\60.JPG" />
+    <None Remove="Kepek\61.JPG" />
+    <None Remove="Kepek\62.JPG" />
+    <None Remove="Kepek\63.JPG" />
+    <None Remove="Kepek\64.JPG" />
+    <None Remove="Kepek\65.JPG" />
+    <None Remove="Kepek\66.JPG" />
+    <None Remove="Kepek\67.JPG" />
+    <None Remove="Kepek\68.JPG" />
+    <None Remove="Kepek\69.JPG" />
+    <None Remove="Kepek\7.jpg" />
+    <None Remove="Kepek\70.JPG" />
+    <None Remove="Kepek\71.JPG" />
+    <None Remove="Kepek\72.JPG" />
+    <None Remove="Kepek\73.JPG" />
+    <None Remove="Kepek\74.JPG" />
+    <None Remove="Kepek\75.JPG" />
+    <None Remove="Kepek\76.JPG" />
+    <None Remove="Kepek\77.JPG" />
+    <None Remove="Kepek\78.JPG" />
+    <None Remove="Kepek\79.JPG" />
+    <None Remove="Kepek\8.jpg" />
+    <None Remove="Kepek\80.JPG" />
+    <None Remove="Kepek\81.JPG" />
+    <None Remove="Kepek\82.JPG" />
+    <None Remove="Kepek\83.JPG" />
+    <None Remove="Kepek\84.JPG" />
+    <None Remove="Kepek\85.JPG" />
+    <None Remove="Kepek\86.JPG" />
+    <None Remove="Kepek\87.JPG" />
+    <None Remove="Kepek\88.JPG" />
+    <None Remove="Kepek\89.JPG" />
+    <None Remove="Kepek\9.jpg" />
+    <None Remove="Kepek\90.JPG" />
+    <None Remove="Kepek\91.JPG" />
+    <None Remove="Kepek\92.JPG" />
+    <None Remove="Kepek\93.JPG" />
+    <None Remove="Kepek\94.JPG" />
+    <None Remove="Kepek\95.JPG" />
+    <None Remove="Kepek\96.JPG" />
+    <None Remove="Kepek\97.JPG" />
+    <None Remove="Kepek\98.JPG" />
+    <None Remove="Kepek\99.JPG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +222,606 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="jatekkep\RC.jpg" />
+    <Content Include="Kepek\1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\10.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\100.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\101.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\102.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\103.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\104.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\105.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\106.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\107.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\108.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\109.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\11.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\110.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\111.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\112.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\113.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\114.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\115.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\116.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\117.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\118.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\119.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\12.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\120.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\121.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\122.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\123.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\124.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\125.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\126.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\127.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\128.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\129.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\13.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\130.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\131.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\132.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\133.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\134.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\135.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\136.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\137.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\138.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\139.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\14.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\140.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\141.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\142.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\143.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\144.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\145.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\146.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\147.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\148.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\149.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\15.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\150.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\151.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\152.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\153.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\154.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\155.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\156.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\157.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\158.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\159.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\16.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\160.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\161.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\162.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\163.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\164.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\165.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\166.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\167.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\168.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\169.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\17.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\170.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\171.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\172.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\173.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\174.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\175.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\176.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\177.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\178.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\179.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\18.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\180.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\181.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\182.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\183.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\184.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\185.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\186.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\187.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\188.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\189.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\19.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\190.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\191.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\192.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\193.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\194.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\195.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\196.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\197.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\198.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\199.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\20.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\200.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\21.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\22.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\23.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\24.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\25.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\26.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\27.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\28.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\29.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\30.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\31.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\32.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\33.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\34.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\35.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\36.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\37.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\38.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\39.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\40.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\41.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\42.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\43.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\44.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\45.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\46.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\47.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\48.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\49.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\50.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\51.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\52.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\53.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\54.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\55.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\56.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\57.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\58.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\59.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\60.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\61.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\62.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\63.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\64.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\65.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\66.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\67.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\68.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\69.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\7.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\70.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\71.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\72.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\73.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\74.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\75.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\76.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\77.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\78.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\79.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\8.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\80.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\81.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\82.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\83.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\84.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\85.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\86.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\87.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\88.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\89.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\9.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\90.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\91.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\92.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\93.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\94.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\95.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\96.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\97.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\98.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Kepek\99.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

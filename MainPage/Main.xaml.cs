@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using MainPage.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -35,13 +37,14 @@ namespace MainPage
                 btnAddGame.Visibility = Visibility.Visible;
             }
             LoadGames();
+            KepekBase64Beolvasasa();
         }
 
         private void LoadGames()
         {
             var gamesWithImages = (from g in _context.Games
                                    join k in _context.Képs on g.Id equals k.GameId into kepek
-                                   from k in kepek.DefaultIfEmpty() 
+                                   from k in kepek.DefaultIfEmpty()
                                    select new
                                    {
                                        g.Id,
@@ -56,7 +59,7 @@ namespace MainPage
                                            .Where(e => e.GameId == g.Id && e.FelhasználóId == bejelentkezettFelhasznalo.Id)
                                            .Select(e => e.FelhasználóÉrtékelés)
                                            .FirstOrDefault(),
-                                       KepUtvonal = k != null ? k.Utvonal : ""
+                                       KepUtvonal = k != null ? ConvertBase64ToImage(k.Utvonal) : null
                                    }).ToList();
 
             GameDataGrid.ItemsSource = gamesWithImages;
@@ -68,7 +71,7 @@ namespace MainPage
         private void AddGame_Click(object sender, RoutedEventArgs e)
         {
             var addGamePage = new AddGamePage(bejelentkezettFelhasznalo);
-            addGamePage.JatekHozzaadva += (s, args) => LoadGames(); 
+            addGamePage.JatekHozzaadva += (s, args) => LoadGames();
             NavigationService.Navigate(addGamePage);
         }
 
@@ -78,7 +81,7 @@ namespace MainPage
             var selectedGame = GameDataGrid.SelectedItem;
             if (selectedGame != null)
             {
-                
+
                 int gameId = (int)selectedGame.GetType().GetProperty("Id").GetValue(selectedGame);
 
                 var kivi = new GamePage(gameId, bejelentkezettFelhasznalo);
@@ -119,11 +122,99 @@ namespace MainPage
                             .Where(e => e.GameId == g.Id && e.FelhasználóId == bejelentkezettFelhasznalo.Id)
                             .Select(e => e.FelhasználóÉrtékelés)
                             .FirstOrDefault(),
-                        KepUtvonal = g.Képs.FirstOrDefault().Utvonal ?? string.Empty
+                        KepUtvonal = g.Képs.FirstOrDefault() != null ? ConvertBase64ToImage(g.Képs.FirstOrDefault().Utvonal) : null
                     })
                     .ToList();
 
                 GameDataGrid.ItemsSource = jatekok;
+            }
+        }
+
+        private void KepekBase64Beolvasasa()
+        {
+            string kepekMappa = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Kepek");
+
+            if (!Directory.Exists(kepekMappa))
+            {
+                Console.WriteLine("A Kepek mappa nem található.");
+                return;
+            }
+
+            string[] fajlok = Directory.GetFiles(kepekMappa, "*.jpg");
+
+            if (fajlok.Length == 0)
+            {
+                Console.WriteLine("Nincsenek képek a mappában.");
+                return;
+            }
+
+            using (var context = new GameContext())
+            {
+                foreach (string fajl in fajlok)
+                {
+                    string fileName = System.IO.Path.GetFileNameWithoutExtension(fajl);
+
+                    if (int.TryParse(fileName, out int gameId))
+                    {
+                        var jatek = context.Games.FirstOrDefault(g => g.Id == gameId);
+
+                        if (jatek != null)
+                        {
+                            try
+                            {
+                                byte[] imageBytes = File.ReadAllBytes(fajl);
+                                string base64String = Convert.ToBase64String(imageBytes);
+
+                                // Kép hozzáadása vagy frissítése
+                                var letezoKep = context.Képs.FirstOrDefault(k => k.GameId == jatek.Id);
+                                if (letezoKep == null)
+                                {
+                                    context.Képs.Add(new Kép
+                                    {
+                                        GameId = jatek.Id,
+                                        Utvonal = base64String
+                                    });
+                                }
+                                else
+                                {
+                                    letezoKep.Utvonal = base64String;
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine($"Hiba a {fileName} fájl feldolgozása során: {ex.Message}");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine($"A {fileName} fájlhoz nem található játék.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"A fájlnév nem érvényes ID: {fileName}");
+                    }
+                }
+
+                context.SaveChanges();
+            }
+        }
+
+        public static BitmapImage ConvertBase64ToImage(string base64String)
+        {
+            if (string.IsNullOrEmpty(base64String))
+                return null;
+
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            using (var ms = new MemoryStream(imageBytes))
+            {
+                var image = new BitmapImage();
+                image.BeginInit();
+                image.CacheOption = BitmapCacheOption.OnLoad;
+                image.StreamSource = ms;
+                image.EndInit();
+                image.Freeze(); 
+                return image;
             }
         }
     }

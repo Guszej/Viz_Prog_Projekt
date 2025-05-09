@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.IO.Pipelines;
 using System.Linq;
 using System.Text;
@@ -49,10 +50,26 @@ namespace MainPage
             var sgame = (from a in context.Games
                          where a.Id == szam
                          select a);
-            var skep = (from a in context.Képs
-                        where a.GameId == szam
-                        select a.Utvonal).FirstOrDefault();
-            ImageSource image = new BitmapImage(new Uri(skep));
+            var skepBase64 = context.Képs
+            .Where(a => a.GameId == szam)
+            .Select(a => a.Utvonal)
+            .FirstOrDefault();
+
+            ImageSource image = null;
+
+            if (!string.IsNullOrEmpty(skepBase64))
+            {
+                byte[] imageBytes = Convert.FromBase64String(skepBase64);
+                using (var ms = new MemoryStream(imageBytes))
+                {
+                    var bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.StreamSource = ms;
+                    bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                    bitmap.EndInit();
+                    image = bitmap;
+                }
+            }
             foreach (var item in sgame)
             {
                 GameImg.Source = image;
