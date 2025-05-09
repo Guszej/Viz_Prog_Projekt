@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MainPage
 {
@@ -30,6 +31,8 @@ namespace MainPage
             this.felhasznalo = felhasznalo;
             this.gameId = gameId;
         }
+
+        public event EventHandler? ErtekelesMentes;
         private void GameRatingbtn_Click(object sender, RoutedEventArgs e)
         {
             TextRange textRange = new TextRange(rtxtbxRating.Document.ContentStart, rtxtbxRating.Document.ContentEnd);
@@ -44,9 +47,12 @@ namespace MainPage
             var existingRating = context.Értékelés.FirstOrDefault(e =>
                 e.FelhasználóId == felhasznalo.Id && e.GameId == gameId);
 
+            bool vankomment = false;
+
             if (existingRating != null)
             {
                 existingRating.FelhasználóÉrtékelés = userRating;
+                vankomment = true;
             }
             else
             {
@@ -60,6 +66,31 @@ namespace MainPage
             }
             context.SaveChanges();
             MessageBox.Show("Értékelés elmentve!");
+
+            if (vankomment)
+            {
+                var log = new Logok
+                {
+                    FelhasználóId = felhasznalo.Id,
+                    Muvelet = $"(GameId:{gameId}) értékelés frissítése",
+                    Datum = DateTime.Now
+                };
+                context.Logok.Add(log);
+
+            }
+            else
+            {
+                var log = new Logok
+                {
+                    FelhasználóId = felhasznalo.Id,
+                    Muvelet = $"(GameId:{gameId}) értékelése",
+                    Datum = DateTime.Now
+                };
+                context.Logok.Add(log);
+            }
+
+            context.SaveChanges();
+            ErtekelesMentes?.Invoke(this, EventArgs.Empty);
             NavigationService.GoBack();
         }
         private void GoBack(object sender, RoutedEventArgs e)

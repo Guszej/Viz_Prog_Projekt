@@ -29,11 +29,11 @@ namespace MainPage
             InitializeComponent();
             bejelentkezettFelhasznalo = felhasznalo;
 
-            if (bejelentkezettFelhasznalo.Rang != "Admin")
-            {
-                MessageBox.Show("Nincs jogosultságod játékot hozzáadni!");
-                NavigationService.GoBack();
-            }
+            ////if (bejelentkezettFelhasznalo.Rang != "Admin")
+            ////{
+            ////    MessageBox.Show("Nincs jogosultságod játékot hozzáadni!");
+            ////    NavigationService.GoBack();
+            ////}
         }
 
         public event EventHandler? JatekHozzaadva;
@@ -42,6 +42,15 @@ namespace MainPage
         {
             try
             {
+                string name = txtNev.Text.Trim();
+
+                bool jatekLetezik = _context.Games.Any(g => g.Név == name);
+                if (jatekLetezik)
+                {
+                    MessageBox.Show("Már létezik ilyen nevű játék az adatbázisban!", "Figyelmeztetés", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
                 var ujJatek = new Game
                 {
                     Név = txtNev.Text,
@@ -53,6 +62,14 @@ namespace MainPage
                     GÉrtékelés = double.Parse(txtertek.Text),
                 };
                 _context.Games.Add(ujJatek);
+
+                var log = new Logok
+                {
+                    FelhasználóId = bejelentkezettFelhasznalo.Id,
+                    Muvelet = $"{name} hozzáadva",
+                    Datum = DateTime.Now
+                };
+                _context.Logok.Add(log);
                 _context.SaveChanges();
                 JatekHozzaadva?.Invoke(this, EventArgs.Empty);
                 MessageBox.Show("Játék sikeresen hozzáadva!");

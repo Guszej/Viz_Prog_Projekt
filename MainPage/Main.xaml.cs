@@ -22,13 +22,14 @@ namespace MainPage
             InitializeComponent();
             bejelentkezettFelhasznalo = felhasznalo;
 
-            // Értékelés oszlop elrejtése vendég rang esetén
+            // Értékelés elrejtése vendég rang esetén
             if (bejelentkezettFelhasznalo.Név == "Vendég")
             {
                 ErtekelesOszlop.Visibility = Visibility.Collapsed;
                 GameDataGrid.Width = 393;
             }
 
+            // Admin rang esetén a játék hozzáadása gomb látható
             if (bejelentkezettFelhasznalo.Rang == "Admin")
             {
                 btnAddGame.Visibility = Visibility.Visible;

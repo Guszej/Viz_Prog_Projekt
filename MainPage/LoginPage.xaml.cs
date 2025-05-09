@@ -65,8 +65,17 @@ namespace MainPage
 
                 MessageBox.Show($"Sikeres bejelentkezés! Rang: {rang}", "Bejelentkezés", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                // 4. Átadás a MainPage-re, a felhasználó adataival
+                // 4. Átadás a MainPage-re, a felhasználó adataival, bejelentkezés logolása
                 var main = new Main(felhasznalo);
+                var log = new Logok
+                {
+                    FelhasználóId = felhasznalo.Id,
+                    Muvelet = "Bejelentkezés",
+                    Datum = DateTime.Now
+                };
+
+                context.Logok.Add(log);
+                context.SaveChanges();
                 this.NavigationService?.Navigate(main);
             }
         }
