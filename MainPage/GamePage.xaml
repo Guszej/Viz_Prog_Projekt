@@ -53,14 +53,14 @@
         </Style>
     </Page.Resources>
     <Grid Loaded="Grid_Loaded">
-        <Image x:Name="GameImg" Width="600" HorizontalAlignment="Left" Margin="230,133,0,179" Stretch="UniformToFill"/>
+        <Image x:Name="GameImg" Width="600" HorizontalAlignment="Left" Margin="230,170,0,180" Stretch="Fill"/>
         <TextBlock x:Name="GameName" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="20"/>
         <TextBlock x:Name="GameDev" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,160,0,0" Width="600"/>
-        <TextBlock x:Name="GameDate" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,295,0,0" Width="600"/>
-        <TextBlock x:Name="GamePlatforms" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,430,0,0" Width="600"/>
-        <TextBlock x:Name="GameType" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,565,0,0" Width="600"/>
-        <TextBlock x:Name="GameMode" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,700,0,0" Width="600"/>
-        <TextBlock x:Name="GameRating" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,835,0,0" Width="600"/>
+        <TextBlock x:Name="GameDate" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,305,0,0" Width="600"/>
+        <TextBlock x:Name="GamePlatforms" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5"  FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,440,0,0" Width="600"/>
+        <TextBlock x:Name="GameType" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,585,0,0" Width="600"/>
+        <TextBlock x:Name="GameMode" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,710,0,0" Width="600"/>
+        <TextBlock x:Name="GameRating" TextWrapping="WrapWithOverflow" Foreground="#f5e6c5" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1180,845,0,0" Width="600"/>
         <Button Style="{StaticResource DarkFantasyButton}" x:Name="btnRating" Content="Adjon meg értékelést!" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="170" Height="40" Margin="50" Click="btnRating_Click" Visibility="Hidden"/>
         <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnBack" Content="Vissza" Click="GoBack" Height="30" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
         <Button Style="{StaticResource DarkFantasyButton}" x:Name="bttnExit" Content="X" FontSize="30" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="40" Click="bttnExit_Click"/>
